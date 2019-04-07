@@ -1,0 +1,11 @@
+@import "flags";
+
+@each $flag in $flags {
+
+  .wh-icon.flag.#{$flag} {
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+    background-image: url("~@/assets/flags/#{$flag}/mon_64.png");
+  }
+}

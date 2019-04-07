@@ -1,28 +1,214 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app" v-on="eventListeners">
+    <GlobalTooltip :mouseEvent="mouseEvent" />
+    <div class="outer">
+      <WhPanel class="outer-panel" title="Background">
+        <div class="outer-panel-content">
+          <p :class="{ quote: (part.type === 'quote') }"
+            v-for="(part, index) in selectedLord.localised_description"
+            :key="index"
+          >
+            {{part.text}}
+          </p>
+        </div>
+      </WhPanel>
+    </div>
+    <div class="center">
+      <WhTitle class="large" style="margin-bottom: 100px;">Select Lord</WhTitle>
+      <div class="container">
+        <WhTitle class="sub name">{{selectedLord.character_name}}</WhTitle>
+        <WhFrameLord
+          :class="{ selected: (lord === selectedLord), defaults: true }"
+          v-for="lord in lords"
+          :key="lord.key"
+          :lord="lord"
+          @click.native="onClick(lord)"
+        />
+      </div>
+    </div>
+    <div class="outer">
+      <WhPanel class="outer-panel" :title="selectedLord.screen_name">
+        <div class="outer-panel-content">
+          <div class="misc">
+            <div class="challenge">
+              <span style="opacity: 0.5;">Initial challenge: </span>
+              <span v-if="selectedLord.difficulty === 'very_hard'" style="color: red;">Very Hard</span>
+              <span v-else-if="selectedLord.difficulty === 'hard'" style="color: red;">Hard</span>
+              <span v-else-if="selectedLord.difficulty === 'normal'" style="color: white;">Normal</span>
+              <span v-else-if="selectedLord.difficulty === 'easy'" style="color: white;">Easy</span>
+            </div>
+            <WhIcon class="faction" :icon="`flag ${selectedLord.factionFlag}`" />
+          </div>
+          <div>
+            <p v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
+              {{text.data}}
+            </p>
+          </div>
+        </div>
+      </WhPanel>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import lords from "@/store/lords.json";
+import WhFrameLord from "@/components/WhFrameLord";
+import WhTitle from "@/components/WhTitle";
+import WhPanel from "@/components/WhPanel";
+import WhIcon from "@/components/WhIcon";
+import GlobalTooltip from "@/components/GlobalTooltip";
+
+function compare(a, b) {
+  if (a.military_group < b.military_group) return -1;
+  if (a.military_group > b.military_group) return 1;
+  return 0;
+}
+
+const campaign = {
+  vortex: Object.values(lords)
+    .filter(entry => entry.key.includes("_vor_") === true)
+    .sort((a, b) => compare(a, b)),
+  mortal: Object.values(lords)
+    .filter(entry => entry.key.includes("_vor_") === false)
+    .sort((a, b) => compare(a, b))
+};
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    WhFrameLord,
+    WhTitle,
+    WhPanel,
+    WhIcon,
+    GlobalTooltip
+  },
+  data() {
+    return {
+      lords: campaign.mortal,
+      selectedCampaign: "mortal",
+      selectedLord: campaign.mortal[0],
+      mouseEvent: null,
+      eventListeners: {
+        mousemove: (mouseEvent) => this.mouseEvent = mouseEvent,
+        mouseleave: () => this.mouseEvent = null
+      }
+    };
+  },
+  methods: {
+    onClick(lord) {
+      this.selectedLord = lord;
+    }
   }
-}
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "~@/scss/lord-portraits.scss";
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+
+  background-size: 100% 100%;
+  background-image: url("~@/assets/battle_land_1.png");
+
+  overflow: hidden;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  color: yellow;
+  font-style: italic;
+}
+
+.misc {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .challenge {
+    font-size: 1.3em;
+  }
+
+  .faction {
+    margin: 5px;
+  }
+}
+
+.outer {
+  width: 25%;
+  height: 100%;
+  color: white;
+  padding: 140px 20px;
+  overflow: hidden;
+
+  .outer-panel {
+    height: 100%;
+  }
+
+  .outer-panel-content {
+    padding: 0 20px;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+  width: 50%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.name {
+  position: absolute;
+  top: -52px;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 20;
+  pointer-events: none;
+  font-size: 0.8em !important;
+}
+
+.defaults {
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.defaults:hover {
+  filter: brightness(100%);
+}
+
+.defaults.selected {
+  filter: brightness(100%);
 }
 </style>

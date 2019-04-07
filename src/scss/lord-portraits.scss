@@ -1,0 +1,10 @@
+@import "lords";
+
+@each $lord in $lords {
+  .lord.#{$lord} {
+    width: 85px;
+    height: 115px;
+    background-size: contain;
+    background-image: url("~@/assets/lords/#{$lord}.png");
+  }
+}
