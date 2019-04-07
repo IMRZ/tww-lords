@@ -1,7 +1,7 @@
 <template>
   <div class="wh-panel">
-    <div v-if="title" class="title">
-      <WhTitle>{{title}}</WhTitle>
+    <div v-if="showTitle" :class="titleClass">
+      <WhTitle :class="{ sub: subtitle }">{{title ? title : subtitle}}</WhTitle>
     </div>
     <div class="content">
       <slot></slot>
@@ -14,7 +14,24 @@ import WhTitle from "@/components/WhTitle";
 
 export default {
   components: { WhTitle },
-  props: { title: String }
+  props: {
+    title: String,
+    subtitle: String
+  },
+  computed: {
+    showTitle() {
+      return (this.title || this.subtitle);
+    },
+    titleClass() {
+      if (this.title) {
+        return "title";
+      } else if (this.subtitle) {
+        return "sub title";
+      } else {
+        return [];
+      }
+    }
+  }
 };
 </script>
 

@@ -88,6 +88,7 @@ function extract() {
 
   const xmlData = {
     agent_subtypes: "assembly_kit/raw_data/db/agent_subtypes.xml",
+    cultures_subcultures: "assembly_kit/raw_data/db/cultures_subcultures.xml",
     factions: "assembly_kit/raw_data/db/factions.xml",
     frontend_faction_leaders: "assembly_kit/raw_data/db/frontend_faction_leaders.xml",
     frontend_factions: "assembly_kit/raw_data/db/frontend_factions.xml",
@@ -106,6 +107,7 @@ function extract() {
 
   const [
     agent_subtypes,
+    cultures_subcultures,
     factions,
     frontend_faction_leaders,
     frontend_factions,
@@ -129,6 +131,9 @@ function extract() {
     const loadingScreenQuote = loading_screen_quotes.find(entry => entry.key === loadingScreenQuotesToUnit.quote);
     const forename = names.find(entry => entry.id === startPosCharacter.Name);
     const surname = names.find(entry => entry.id === startPosCharacter.Surname);
+    const cultureSubculture = cultures_subcultures.find(entry => entry.subculture === faction.subculture);
+
+    console.log(cultureSubculture.name);
 
     accumulator[frontendFactionLeader.key] = {
       key: frontendFactionLeader.key,
@@ -140,6 +145,7 @@ function extract() {
       faction: faction.key,
       factionFlag: faction.flags_path.toLowerCase().match(/^ui\\flags\\(.*)$/)[1],
       military_group: faction.military_group,
+      subculture_name: cultureSubculture.name,
       screen_name: faction.screen_name,
       character_name: transformName(forename, surname),
       // localised_playstyle: frontendFaction.localised_playstyle, // EMPTY?

@@ -2,21 +2,25 @@
   <div class="app" v-on="eventListeners">
     <GlobalTooltip :mouseEvent="mouseEvent" />
     <div class="outer">
-      <WhPanel class="outer-panel" title="Background">
-        <div class="desc-panel-content">
-          <p :class="{ quote: (part.type === 'quote') }"
-            v-for="(part, index) in selectedLord.localised_description"
-            :key="index"
-          >
-            {{part.text}}
-          </p>
+      <WhPanel class="outer-panel" :title="selectedLord.subculture_name">
+        <div class="outer-panel-content">
+          <WhPanel>
+            <div class="placeholder">PLACEHOLDER</div>
+          </WhPanel>
+          <WhPanel title="Race Attributes">
+            <div class="faction-mechanics">
+              <div class="faction-bullet" v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
+                <WhIcon class="faction-bullet-icon" :icon="`${icon.category} ${icon.data}`" />
+                <span class="faction-bullet-text">{{text.data}}</span>
+              </div>
+            </div>
+          </WhPanel>
         </div>
       </WhPanel>
     </div>
     <div class="center">
-      <WhTitle class="large" style="margin-bottom: 100px;">Select Lord</WhTitle>
+      <WhTitle class="large">Select Lord</WhTitle>
       <div class="container">
-        <WhTitle class="sub name">{{selectedLord.character_name}}</WhTitle>
         <WhFrameLord
           :class="{ selected: (lord === selectedLord), defaults: true }"
           v-for="lord in lords"
@@ -25,6 +29,10 @@
           @click.native="onClick(lord)"
         />
       </div>
+      <WhPanel style="width: 850px; margin-top: 30px;" :subtitle="selectedLord.character_name">
+        <!-- selectedLord.localised_description -->
+        <div class="placeholder">PLACEHOLDER</div>
+      </WhPanel>
     </div>
     <div class="outer">
       <WhPanel class="outer-panel" :title="selectedLord.screen_name">
@@ -39,14 +47,6 @@
                 <span v-else-if="selectedLord.difficulty === 'easy'" style="color: white;">Easy</span>
               </div>
               <WhIcon class="faction" :icon="`flag ${selectedLord.factionFlag}`" />
-            </div>
-          </WhPanel>
-          <WhPanel title="Race Attributes">
-            <div class="faction-mechanics">
-              <div class="faction-bullet" v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
-                <WhIcon class="faction-bullet-icon" :icon="`${icon.category} ${icon.data}`" />
-                <span class="faction-bullet-text">{{text.data}}</span>
-              </div>
             </div>
           </WhPanel>
         </div>
@@ -158,6 +158,15 @@ body {
   }
 }
 
+.placeholder {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .faction-mechanics {
   color: greenyellow;
   padding: 5px;
@@ -173,28 +182,17 @@ body {
     min-height: 36px;
     margin-right: 10px;
   }
-
-  &-text {
-
-  }
 }
 
 .outer {
   width: 25%;
   height: 100%;
   color: white;
-  padding: 140px 20px;
+  padding: 70px 20px;
   overflow: hidden;
 
   .outer-panel {
     height: 100%;
-  }
-
-  .desc-panel-content {
-    padding: 8px 24px;
-    max-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
   }
 
   .outer-panel-content {
@@ -221,16 +219,6 @@ body {
   justify-content: center;
   align-items: center;
   align-content: flex-start;
-}
-
-.name {
-  position: absolute;
-  top: -52px;
-  left: 50%;
-  margin-left: -160px;
-  z-index: 20;
-  pointer-events: none;
-  font-size: 0.8em !important;
 }
 
 .defaults {
