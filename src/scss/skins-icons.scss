@@ -1,0 +1,10 @@
+@import "skins";
+
+@each $icon in $default {
+  .wh-icon.default.#{$icon} {
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-image: url("~@/assets/icons/skins/default/#{$icon}.png");
+  }
+}

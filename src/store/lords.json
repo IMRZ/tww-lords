@@ -31,7 +31,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_skv_underway"
+          "category": "faction_bullets",
+          "data": "bullet_skv_underworld"
         },
         {
           "type": "text",
@@ -41,6 +42,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_skv_food"
         },
         {
@@ -51,6 +53,7 @@
       [
         {
           "type": "icon",
+          "category": "default",
           "data": "icon_corruption_skv"
         },
         {
@@ -126,6 +129,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_crafting"
         },
         {
@@ -136,6 +140,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_dynasty"
         },
         {
@@ -146,6 +151,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_souls"
         },
         {
@@ -207,6 +213,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_crafting"
         },
         {
@@ -217,6 +224,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_dynasty"
         },
         {
@@ -227,6 +235,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_souls"
         },
         {
@@ -300,6 +309,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_crafting"
         },
         {
@@ -310,6 +320,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_dynasty"
         },
         {
@@ -320,6 +331,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_souls"
         },
         {
@@ -381,6 +393,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_crafting"
         },
         {
@@ -391,6 +404,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_dynasty"
         },
         {
@@ -401,6 +415,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_souls"
         },
         {
@@ -462,7 +477,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_skv_underway"
+          "category": "faction_bullets",
+          "data": "bullet_skv_underworld"
         },
         {
           "type": "text",
@@ -472,6 +488,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_skv_food"
         },
         {
@@ -482,6 +499,7 @@
       [
         {
           "type": "icon",
+          "category": "default",
           "data": "icon_corruption_skv"
         },
         {
@@ -557,6 +575,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_crafting"
         },
         {
@@ -567,6 +586,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_dynasty"
         },
         {
@@ -577,6 +597,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_souls"
         },
         {
@@ -638,6 +659,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_crafting"
         },
         {
@@ -648,6 +670,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_dynasty"
         },
         {
@@ -658,6 +681,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_souls"
         },
         {
@@ -731,6 +755,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_crafting"
         },
         {
@@ -741,6 +766,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_dynasty"
         },
         {
@@ -751,6 +777,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_souls"
         },
         {
@@ -812,6 +839,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_crafting"
         },
         {
@@ -822,6 +850,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_dynasty"
         },
         {
@@ -832,6 +861,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_tmb_souls"
         },
         {
@@ -893,6 +923,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_black_arks"
         },
         {
@@ -903,6 +934,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_slaves"
         },
         {
@@ -913,6 +945,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_murderous_prowess"
         },
         {
@@ -978,6 +1011,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_intrigue"
         },
         {
@@ -988,6 +1022,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_espionage"
         },
         {
@@ -998,6 +1033,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_martial_prowess"
         },
         {
@@ -1043,6 +1079,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_intrigue"
         },
         {
@@ -1053,6 +1090,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_espionage"
         },
         {
@@ -1063,6 +1101,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_martial_prowess"
         },
         {
@@ -1132,6 +1171,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_black_arks"
         },
         {
@@ -1142,6 +1182,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_slaves"
         },
         {
@@ -1152,6 +1193,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_murderous_prowess"
         },
         {
@@ -1217,6 +1259,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_intrigue"
         },
         {
@@ -1227,6 +1270,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_espionage"
         },
         {
@@ -1237,6 +1281,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_martial_prowess"
         },
         {
@@ -1282,6 +1327,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_intrigue"
         },
         {
@@ -1292,6 +1338,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_espionage"
         },
         {
@@ -1302,6 +1349,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_martial_prowess"
         },
         {
@@ -1375,6 +1423,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_infamy"
         },
         {
@@ -1385,6 +1434,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_coves"
         },
         {
@@ -1395,6 +1445,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_extra_powder"
         },
         {
@@ -1466,6 +1517,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_infamy"
         },
         {
@@ -1476,6 +1528,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_coves"
         },
         {
@@ -1486,6 +1539,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_extra_powder"
         },
         {
@@ -1557,6 +1611,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_infamy"
         },
         {
@@ -1567,6 +1622,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_coves"
         },
         {
@@ -1577,6 +1633,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_extra_powder"
         },
         {
@@ -1642,6 +1699,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_black_arks"
         },
         {
@@ -1652,6 +1710,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_slaves"
         },
         {
@@ -1662,6 +1721,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_murderous_prowess"
         },
         {
@@ -1721,6 +1781,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_infamy"
         },
         {
@@ -1731,6 +1792,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_coves"
         },
         {
@@ -1741,6 +1803,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_extra_powder"
         },
         {
@@ -1816,6 +1879,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_infamy"
         },
         {
@@ -1826,6 +1890,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_coves"
         },
         {
@@ -1836,6 +1901,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_extra_powder"
         },
         {
@@ -1907,6 +1973,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_infamy"
         },
         {
@@ -1917,6 +1984,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_coves"
         },
         {
@@ -1927,6 +1995,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_extra_powder"
         },
         {
@@ -1998,6 +2067,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_infamy"
         },
         {
@@ -2008,6 +2078,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_coves"
         },
         {
@@ -2018,6 +2089,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_extra_powder"
         },
         {
@@ -2083,6 +2155,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_black_arks"
         },
         {
@@ -2093,6 +2166,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_slaves"
         },
         {
@@ -2103,6 +2177,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_murderous_prowess"
         },
         {
@@ -2162,6 +2237,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_infamy"
         },
         {
@@ -2172,6 +2248,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_coves"
         },
         {
@@ -2182,6 +2259,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_cst_extra_powder"
         },
         {
@@ -2257,6 +2335,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_black_arks"
         },
         {
@@ -2267,6 +2346,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_slaves"
         },
         {
@@ -2277,6 +2357,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_murderous_prowess"
         },
         {
@@ -2348,6 +2429,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_black_arks"
         },
         {
@@ -2358,6 +2440,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_slaves"
         },
         {
@@ -2368,6 +2451,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_murderous_prowess"
         },
         {
@@ -2423,6 +2507,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_intrigue"
         },
         {
@@ -2433,6 +2518,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_espionage"
         },
         {
@@ -2443,6 +2529,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_martial_prowess"
         },
         {
@@ -2496,6 +2583,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_intrigue"
         },
         {
@@ -2506,6 +2594,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_espionage"
         },
         {
@@ -2516,6 +2605,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_martial_prowess"
         },
         {
@@ -2583,6 +2673,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_geomantic_web"
         },
         {
@@ -2593,6 +2684,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_spawning"
         },
         {
@@ -2603,6 +2695,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_beasts"
         },
         {
@@ -2680,6 +2773,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_geomantic_web"
         },
         {
@@ -2690,6 +2784,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_spawning"
         },
         {
@@ -2700,6 +2795,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_beasts"
         },
         {
@@ -2749,7 +2845,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_skv_underway"
+          "category": "faction_bullets",
+          "data": "bullet_skv_underworld"
         },
         {
           "type": "text",
@@ -2759,6 +2856,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_skv_food"
         },
         {
@@ -2769,6 +2867,7 @@
       [
         {
           "type": "icon",
+          "category": "default",
           "data": "icon_corruption_skv"
         },
         {
@@ -2834,7 +2933,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_skv_underway"
+          "category": "faction_bullets",
+          "data": "bullet_skv_underworld"
         },
         {
           "type": "text",
@@ -2844,6 +2944,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_skv_food"
         },
         {
@@ -2854,6 +2955,7 @@
       [
         {
           "type": "icon",
+          "category": "default",
           "data": "icon_corruption_skv"
         },
         {
@@ -2927,6 +3029,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_black_arks"
         },
         {
@@ -2937,6 +3040,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_slaves"
         },
         {
@@ -2947,6 +3051,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_murderous_prowess"
         },
         {
@@ -3018,6 +3123,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_black_arks"
         },
         {
@@ -3028,6 +3134,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_slaves"
         },
         {
@@ -3038,6 +3145,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_def_murderous_prowess"
         },
         {
@@ -3093,6 +3201,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_intrigue"
         },
         {
@@ -3103,6 +3212,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_espionage"
         },
         {
@@ -3113,6 +3223,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_martial_prowess"
         },
         {
@@ -3166,6 +3277,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_intrigue"
         },
         {
@@ -3176,6 +3288,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_espionage"
         },
         {
@@ -3186,6 +3299,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_hef_martial_prowess"
         },
         {
@@ -3253,6 +3367,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_geomantic_web"
         },
         {
@@ -3263,6 +3378,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_spawning"
         },
         {
@@ -3273,6 +3389,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_beasts"
         },
         {
@@ -3350,6 +3467,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_geomantic_web"
         },
         {
@@ -3360,6 +3478,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_spawning"
         },
         {
@@ -3370,6 +3489,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_lzd_beasts"
         },
         {
@@ -3419,7 +3539,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_skv_underway"
+          "category": "faction_bullets",
+          "data": "bullet_skv_underworld"
         },
         {
           "type": "text",
@@ -3429,6 +3550,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_skv_food"
         },
         {
@@ -3439,6 +3561,7 @@
       [
         {
           "type": "icon",
+          "category": "default",
           "data": "icon_corruption_skv"
         },
         {
@@ -3504,7 +3627,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_skv_underway"
+          "category": "faction_bullets",
+          "data": "bullet_skv_underworld"
         },
         {
           "type": "text",
@@ -3514,6 +3638,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_skv_food"
         },
         {
@@ -3524,6 +3649,7 @@
       [
         {
           "type": "icon",
+          "category": "default",
           "data": "icon_corruption_skv"
         },
         {
@@ -3589,7 +3715,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_bst_moon"
+          "category": "faction_bullets",
+          "data": "bullet_bst_the_dark_moon"
         },
         {
           "type": "text",
@@ -3599,7 +3726,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_bst_beastpath"
+          "category": "faction_bullets",
+          "data": "bullet_bst_beastpaths"
         },
         {
           "type": "text",
@@ -3609,6 +3737,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_bst_units"
         },
         {
@@ -3658,7 +3787,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_bst_moon"
+          "category": "faction_bullets",
+          "data": "bullet_bst_the_dark_moon"
         },
         {
           "type": "text",
@@ -3668,7 +3798,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_bst_beastpath"
+          "category": "faction_bullets",
+          "data": "bullet_bst_beastpaths"
         },
         {
           "type": "text",
@@ -3678,6 +3809,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_bst_units"
         },
         {
@@ -3725,7 +3857,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_bst_moon"
+          "category": "faction_bullets",
+          "data": "bullet_bst_the_dark_moon"
         },
         {
           "type": "text",
@@ -3735,7 +3868,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_bst_beastpath"
+          "category": "faction_bullets",
+          "data": "bullet_bst_beastpaths"
         },
         {
           "type": "text",
@@ -3745,6 +3879,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_bst_units"
         },
         {
@@ -3802,7 +3937,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_emp_magic"
+          "category": "faction_bullets",
+          "data": "bullet_emp_colleges_of_magic"
         },
         {
           "type": "text",
@@ -3812,6 +3948,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_emp_offices"
         },
         {
@@ -3822,6 +3959,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_emp_units"
         },
         {
@@ -3863,7 +4001,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_vmp_dead"
+          "category": "faction_bullets",
+          "data": "bullet_vmp_raise_dead"
         },
         {
           "type": "text",
@@ -3873,6 +4012,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_corruption"
         },
         {
@@ -3883,6 +4023,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_units"
         },
         {
@@ -3932,6 +4073,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_wef_tree_council"
         },
         {
@@ -3942,6 +4084,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_wef_amber"
         },
         {
@@ -3952,6 +4095,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_wef_worldroots"
         },
         {
@@ -3962,6 +4106,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_wef_units_monstrous"
         },
         {
@@ -4015,6 +4160,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_wef_council"
         },
         {
@@ -4025,6 +4171,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_wef_amber"
         },
         {
@@ -4035,6 +4182,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_wef_worldroots"
         },
         {
@@ -4045,6 +4193,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_wef_units"
         },
         {
@@ -4110,7 +4259,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_dwf_ancestors"
+          "category": "faction_bullets",
+          "data": "bullet_dwf_angrund_ancestors"
         },
         {
           "type": "text",
@@ -4120,6 +4270,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_grudges"
         },
         {
@@ -4130,6 +4281,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_underway"
         },
         {
@@ -4140,6 +4292,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_units"
         },
         {
@@ -4203,7 +4356,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_grn_karak"
+          "category": "faction_bullets",
+          "data": "bullet_grn_eight_peaks"
         },
         {
           "type": "text",
@@ -4213,6 +4367,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_grn_waaagh"
         },
         {
@@ -4223,6 +4378,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_underway"
         },
         {
@@ -4233,6 +4389,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_grn_units"
         },
         {
@@ -4284,7 +4441,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_grn_savage"
+          "category": "faction_bullets",
+          "data": "bullet_grn_savage_orcs"
         },
         {
           "type": "text",
@@ -4294,6 +4452,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_grn_waaagh"
         },
         {
@@ -4304,6 +4463,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_underway"
         },
         {
@@ -4314,6 +4474,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_grn_units"
         },
         {
@@ -4367,6 +4528,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_brt_chivalry"
         },
         {
@@ -4377,6 +4539,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_brt_peasants"
         },
         {
@@ -4387,6 +4550,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_brt_units"
         },
         {
@@ -4446,6 +4610,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_brt_chivalry"
         },
         {
@@ -4456,6 +4621,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_brt_peasants"
         },
         {
@@ -4466,6 +4632,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_brt_units"
         },
         {
@@ -4507,6 +4674,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_brt_chivalry"
         },
         {
@@ -4517,6 +4685,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_brt_peasants"
         },
         {
@@ -4527,6 +4696,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_brt_units"
         },
         {
@@ -4580,6 +4750,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_nor_gods"
         },
         {
@@ -4590,6 +4761,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_nor_monsters"
         },
         {
@@ -4600,6 +4772,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_nor_units"
         },
         {
@@ -4669,6 +4842,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_nor_gods"
         },
         {
@@ -4679,6 +4853,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_nor_monsters"
         },
         {
@@ -4689,6 +4864,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_nor_units"
         },
         {
@@ -4746,7 +4922,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_chs_awaken"
+          "category": "faction_bullets",
+          "data": "bullet_chs_awaken_tribes"
         },
         {
           "type": "text",
@@ -4756,6 +4933,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_chs_corruption"
         },
         {
@@ -4766,6 +4944,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_chs_units"
         },
         {
@@ -4835,7 +5014,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_chs_awaken"
+          "category": "faction_bullets",
+          "data": "bullet_chs_awaken_tribes"
         },
         {
           "type": "text",
@@ -4845,6 +5025,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_chs_corruption"
         },
         {
@@ -4855,6 +5036,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_chs_units"
         },
         {
@@ -4916,7 +5098,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_chs_awaken"
+          "category": "faction_bullets",
+          "data": "bullet_chs_awaken_tribes"
         },
         {
           "type": "text",
@@ -4926,6 +5109,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_chs_corruption"
         },
         {
@@ -4936,6 +5120,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_chs_units"
         },
         {
@@ -4995,6 +5180,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_grudges"
         },
         {
@@ -5005,6 +5191,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_underway"
         },
         {
@@ -5015,6 +5202,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_units"
         },
         {
@@ -5072,6 +5260,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_grudges"
         },
         {
@@ -5082,6 +5271,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_underway"
         },
         {
@@ -5092,6 +5282,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_units"
         },
         {
@@ -5143,6 +5334,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_grudges"
         },
         {
@@ -5153,6 +5345,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_underway"
         },
         {
@@ -5163,6 +5356,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_units"
         },
         {
@@ -5228,7 +5422,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_emp_magic"
+          "category": "faction_bullets",
+          "data": "bullet_emp_colleges_of_magic"
         },
         {
           "type": "text",
@@ -5238,6 +5433,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_emp_offices"
         },
         {
@@ -5248,6 +5444,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_emp_units"
         },
         {
@@ -5289,7 +5486,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_emp_magic"
+          "category": "faction_bullets",
+          "data": "bullet_emp_colleges_of_magic"
         },
         {
           "type": "text",
@@ -5299,6 +5497,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_emp_offices"
         },
         {
@@ -5309,6 +5508,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_emp_units"
         },
         {
@@ -5360,6 +5560,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_grn_waaagh"
         },
         {
@@ -5370,6 +5571,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_underway"
         },
         {
@@ -5380,6 +5582,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_grn_units"
         },
         {
@@ -5433,6 +5636,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_grn_waaagh"
         },
         {
@@ -5443,6 +5647,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_dwf_underway"
         },
         {
@@ -5453,6 +5658,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_grn_units"
         },
         {
@@ -5510,7 +5716,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_vmp_dead"
+          "category": "faction_bullets",
+          "data": "bullet_vmp_raise_dead"
         },
         {
           "type": "text",
@@ -5520,6 +5727,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_corruption"
         },
         {
@@ -5530,6 +5738,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_units"
         },
         {
@@ -5571,7 +5780,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_vmp_dead"
+          "category": "faction_bullets",
+          "data": "bullet_vmp_raise_dead"
         },
         {
           "type": "text",
@@ -5581,6 +5791,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_corruption"
         },
         {
@@ -5591,6 +5802,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_units"
         },
         {
@@ -5652,6 +5864,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_love"
         },
         {
@@ -5662,7 +5875,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_vmp_dead"
+          "category": "faction_bullets",
+          "data": "bullet_vmp_raise_dead"
         },
         {
           "type": "text",
@@ -5672,6 +5886,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_units"
         },
         {
@@ -5729,6 +5944,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_love"
         },
         {
@@ -5739,7 +5955,8 @@
       [
         {
           "type": "icon",
-          "data": "bullet_vmp_dead"
+          "category": "faction_bullets",
+          "data": "bullet_vmp_raise_dead"
         },
         {
           "type": "text",
@@ -5749,6 +5966,7 @@
       [
         {
           "type": "icon",
+          "category": "faction_bullets",
           "data": "bullet_vmp_units"
         },
         {

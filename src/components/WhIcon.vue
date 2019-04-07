@@ -16,4 +16,6 @@ export default {
 }
 
 @import "~@/scss/flag-icons";
+@import "~@/scss/faction-bullets-icons";
+@import "~@/scss/skins-icons";
 </style>

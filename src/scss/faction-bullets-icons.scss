@@ -1,0 +1,11 @@
+@import "faction-bullets";
+
+@each $bullet in $faction-bullets {
+
+  .wh-icon.faction_bullets.#{$bullet} {
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-image: url("~@/assets/faction_bullets/#{$bullet}.png");
+  }
+}

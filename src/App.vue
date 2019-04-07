@@ -43,9 +43,10 @@
           </WhPanel>
           <WhPanel title="Race Attributes">
             <div class="faction-mechanics">
-              <p v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
-                {{text.data}}
-              </p>
+              <div class="faction-bullet" v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
+                <WhIcon class="faction-bullet-icon" :icon="`${icon.category} ${icon.data}`" />
+                <span class="faction-bullet-text">{{text.data}}</span>
+              </div>
             </div>
           </WhPanel>
         </div>
@@ -158,8 +159,24 @@ body {
 }
 
 .faction-mechanics {
-  color: lawngreen;
-  padding: 0 16px;
+  color: greenyellow;
+  padding: 5px;
+}
+
+.faction-bullet {
+  display: flex;
+  align-items: center;
+  margin: 10px 5px;
+
+  &-icon {
+    min-width: 36px;
+    min-height: 36px;
+    margin-right: 10px;
+  }
+
+  &-text {
+
+  }
 }
 
 .outer {

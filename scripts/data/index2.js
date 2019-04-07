@@ -22,6 +22,27 @@ function parseXmlFile(pathToWh2Dir, dataTag, dataPath) {
   return result.dataroot[dataTag];
 }
 
+function transformFactionBulletpoints(ui_tagged_images, bulletpoints) {
+  return bulletpoints
+    .split("||")
+    .map((line) => line.split(/(\[\[.*?\[\[\/img\]\])/g))
+    .map((parts) => {
+      return parts
+        .filter((part) => part !== "")
+        .map((part) => {
+          if (part.startsWith("[[img:")) {
+            const [fullMatch, imageTag] = part.match(/^\[\[img:(.*)\]\]\[\[\/img]]$/);
+            const imagePath = ui_tagged_images.find(entry => entry.key === imageTag).image_path;
+            const [fullMatch2, category, icon] = imagePath.toLowerCase().match(/ui\/(?:.*)\/(.*)\/(.*).png/);
+            return { type: "icon", category: category, data: icon };
+          } else {
+            const text = part.replace(/&amp;/g, "&").replace(/\[\[\/col\]\]/g, "");
+            return { type: "text", data: text };
+          }
+        });
+    });
+}
+
 function transformBulletpoints(bulletpoints) {
   return bulletpoints
     .split("||")
@@ -76,6 +97,7 @@ function extract() {
     start_pos_characters: "assembly_kit/raw_data/db/start_pos_characters.xml",
     start_pos_factions: "assembly_kit/raw_data/db/start_pos_factions.xml",
     start_pos_starting_general_options: "assembly_kit/raw_data/db/start_pos_starting_general_options.xml",
+    ui_tagged_images: "assembly_kit/raw_data/db/ui_tagged_images.xml"
   };
 
   const jsonData = Object.entries(xmlData).map(([dataTag, dataPath]) => {
@@ -93,6 +115,7 @@ function extract() {
     start_pos_characters,
     start_pos_factions,
     start_pos_starting_general_options,
+    ui_tagged_images,
   ] = jsonData;
 
   return frontend_faction_leaders.reduce((accumulator, frontendFactionLeader) => {
@@ -121,7 +144,7 @@ function extract() {
       character_name: transformName(forename, surname),
       // localised_playstyle: frontendFaction.localised_playstyle, // EMPTY?
       quote: loadingScreenQuote.description,
-      localised_mechanics: transformBulletpoints(frontendFaction.localised_mechanics),
+      localised_mechanics: transformFactionBulletpoints(ui_tagged_images, frontendFaction.localised_mechanics),
       bulletpoints: transformBulletpoints(loadingScreenQuote.bulletpoints)
     };
 
