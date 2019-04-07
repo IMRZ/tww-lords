@@ -33,6 +33,16 @@ export default {
   background-clip: content-box;
 }
 
+.wh-panel .wh-panel {
+  border-image-source: url("~@/assets/panel_back_inner_frame.png");
+  background-image: none;
+  padding: 0 8px;
+}
+
+.wh-panel .wh-panel:not(:first-child) {
+  margin-top: 34px;
+}
+
 .title {
   position: absolute;
   top: -25px;
@@ -40,6 +50,11 @@ export default {
   right: 0;
   display: flex;
   justify-content: center;
+  z-index: 10;
+}
+
+.wh-panel .wh-panel .title {
+  top: -40px;
 }
 
 .content {
@@ -48,6 +63,6 @@ export default {
 }
 
 .title + .content {
-  padding: 15px 0;
+  z-index: 5;
 }
 </style>

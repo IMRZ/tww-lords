@@ -1,7 +1,7 @@
 <script>
 import WhTooltip from "@/components/WhTooltip";
 
-const OFFSET = 20;
+const OFFSET = 40;
 
 export default {
   components: { WhTooltip },

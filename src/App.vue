@@ -3,7 +3,7 @@
     <GlobalTooltip :mouseEvent="mouseEvent" />
     <div class="outer">
       <WhPanel class="outer-panel" title="Background">
-        <div class="outer-panel-content">
+        <div class="desc-panel-content">
           <p :class="{ quote: (part.type === 'quote') }"
             v-for="(part, index) in selectedLord.localised_description"
             :key="index"
@@ -29,21 +29,25 @@
     <div class="outer">
       <WhPanel class="outer-panel" :title="selectedLord.screen_name">
         <div class="outer-panel-content">
-          <div class="misc">
-            <div class="challenge">
-              <span style="opacity: 0.5;">Initial challenge: </span>
-              <span v-if="selectedLord.difficulty === 'very_hard'" style="color: red;">Very Hard</span>
-              <span v-else-if="selectedLord.difficulty === 'hard'" style="color: red;">Hard</span>
-              <span v-else-if="selectedLord.difficulty === 'normal'" style="color: white;">Normal</span>
-              <span v-else-if="selectedLord.difficulty === 'easy'" style="color: white;">Easy</span>
+          <WhPanel>
+            <div class="misc">
+              <div class="challenge">
+                <span style="opacity: 0.5;">Initial challenge: </span>
+                <span v-if="selectedLord.difficulty === 'very_hard'" style="color: red;">Very Hard</span>
+                <span v-else-if="selectedLord.difficulty === 'hard'" style="color: red;">Hard</span>
+                <span v-else-if="selectedLord.difficulty === 'normal'" style="color: white;">Normal</span>
+                <span v-else-if="selectedLord.difficulty === 'easy'" style="color: white;">Easy</span>
+              </div>
+              <WhIcon class="faction" :icon="`flag ${selectedLord.factionFlag}`" />
             </div>
-            <WhIcon class="faction" :icon="`flag ${selectedLord.factionFlag}`" />
-          </div>
-          <div>
-            <p v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
-              {{text.data}}
-            </p>
-          </div>
+          </WhPanel>
+          <WhPanel title="Race Attributes">
+            <div class="faction-mechanics">
+              <p v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
+                {{text.data}}
+              </p>
+            </div>
+          </WhPanel>
         </div>
       </WhPanel>
     </div>
@@ -153,6 +157,11 @@ body {
   }
 }
 
+.faction-mechanics {
+  color: lawngreen;
+  padding: 0 16px;
+}
+
 .outer {
   width: 25%;
   height: 100%;
@@ -164,9 +173,17 @@ body {
     height: 100%;
   }
 
-  .outer-panel-content {
-    padding: 0 20px;
+  .desc-panel-content {
+    padding: 8px 24px;
     max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .outer-panel-content {
+    padding: 0 8px;
+    max-height: 100%;
+    overflow-x: hidden;
     overflow-y: auto;
   }
 }
