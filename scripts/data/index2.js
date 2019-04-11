@@ -83,13 +83,80 @@ function transformName(forename, surname) {
   }
 }
 
+function transformFactionsEffects(ui_tagged_images, faction_effect_groups, frontend_faction_effect_junctions, effects) {
+  return faction_effect_groups.reduce((accumulator, effect_group) => {
+    const group_effects = frontend_faction_effect_junctions.filter(entry => entry.group === effect_group.group_key);
+
+    accumulator[effect_group.ui_section] = group_effects.map((group_effect) => {
+      const effect = effects.find(entry => entry.effect === group_effect.effect);
+
+      const description = effect.description
+        .replace(/(%\+n)|(%n)/, group_effect.value)
+        .replace(/%%/, "%") // workaround for hardcoded clan angrund effect
+        .split(/(\[\[.*?\[\[\/img\]\])/g)
+        .map((part) => {
+          if (part.startsWith("[[img:")) {
+            const [fullMatch, imageTag] = part.match(/^\[\[img:(.*)\]\]\[\[\/img]]$/);
+
+            const imagePath = imageTag.toLowerCase().startsWith("ui/flags/")
+              ? imageTag
+              : ui_tagged_images.find(entry => entry.key === imageTag).image_path;
+
+            const pattern = imagePath.toLowerCase().startsWith("ui/flags/")
+              ? /^ui\/(flags)\/(.*)\/mon_24.png$/
+              : /ui\/(?:.*)\/(.*)\/(.*).png/;
+
+            const [fullMatch2, category, icon] = imagePath.toLowerCase().match(pattern);
+
+            return {
+              type: "icon",
+              category: category,
+              data: icon
+            };
+          } else {
+            const data = part
+              .replace(/&quot;/g, "\"")
+              .replace(/&amp;/g, "&")
+              .replace(/{{tr:public_order_effect}}/, "Public order"); // only one for now, so this is ok
+
+            if (data.startsWith("[[col:")) {
+              const [fullMatch, col, extract] = data.match(/^\[\[col:(.*)\]\](.*)\[\[\/col]]$/)
+
+              return { type: "text", data: extract, style: col };
+            }
+
+            return { type: "text", data: data };
+          }
+        });
+
+      const result = {
+        icon: effect.icon.split(".")[0],
+        value: group_effect.value,
+        description: description,
+        priority: effect.priority,
+        icon_negative: effect.icon_negative.split(".")[0],
+        is_positive_value_good: !!effect.is_positive_value_good
+      };
+
+      console.log(effect.icon);
+
+      return result;
+    }).sort((a,b) => (a.priority > b.priority) ? 1 : ((b.priority > a.priority) ? -1 : 0));
+
+    return accumulator;
+  }, {});
+}
+
 function extract() {
   const pathToWh2Dir = getPathToWh2Dir();
 
   const xmlData = {
     agent_subtypes: "assembly_kit/raw_data/db/agent_subtypes.xml",
     cultures_subcultures: "assembly_kit/raw_data/db/cultures_subcultures.xml",
+    effects: "assembly_kit/raw_data/db/effects.xml",
     factions: "assembly_kit/raw_data/db/factions.xml",
+    frontend_faction_effect_groups: "assembly_kit/raw_data/db/frontend_faction_effect_groups.xml",
+    frontend_faction_effect_junctions: "assembly_kit/raw_data/db/frontend_faction_effect_junctions.xml",
     frontend_faction_leaders: "assembly_kit/raw_data/db/frontend_faction_leaders.xml",
     frontend_factions: "assembly_kit/raw_data/db/frontend_factions.xml",
     loading_screen_quotes: "assembly_kit/raw_data/db/loading_screen_quotes.xml",
@@ -108,7 +175,10 @@ function extract() {
   const [
     agent_subtypes,
     cultures_subcultures,
+    effects,
     factions,
+    frontend_faction_effect_groups,
+    frontend_faction_effect_junctions,
     frontend_faction_leaders,
     frontend_factions,
     loading_screen_quotes,
@@ -132,8 +202,7 @@ function extract() {
     const forename = names.find(entry => entry.id === startPosCharacter.Name);
     const surname = names.find(entry => entry.id === startPosCharacter.Surname);
     const cultureSubculture = cultures_subcultures.find(entry => entry.subculture === faction.subculture);
-
-    console.log(cultureSubculture.name);
+    const frontendFactionEffectGroups = frontend_faction_effect_groups.filter(entry => entry.faction_leader === frontendFactionLeader.key);
 
     accumulator[frontendFactionLeader.key] = {
       key: frontendFactionLeader.key,
@@ -151,7 +220,8 @@ function extract() {
       // localised_playstyle: frontendFaction.localised_playstyle, // EMPTY?
       quote: loadingScreenQuote.description,
       localised_mechanics: transformFactionBulletpoints(ui_tagged_images, frontendFaction.localised_mechanics),
-      bulletpoints: transformBulletpoints(loadingScreenQuote.bulletpoints)
+      bulletpoints: transformBulletpoints(loadingScreenQuote.bulletpoints),
+      faction_effects: transformFactionsEffects(ui_tagged_images, frontendFactionEffectGroups, frontend_faction_effect_junctions, effects),
     };
 
     return accumulator;

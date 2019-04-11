@@ -100,7 +100,91 @@
           "data": "Charge defence against large foes"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_frozen",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Frozen"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_frozen",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "trait_climate_jungle",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Unpleasant Climate: Jungle"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "trait_climate_jungle",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "public_order",
+          "value": 4,
+          "description": [
+            {
+              "type": "text",
+              "data": "Public order: 4 whenever a diplomatic treaty is broken"
+            }
+          ],
+          "priority": 4,
+          "icon_negative": "public_order",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "melee",
+          "value": 13,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 13 during ambushes"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "melee",
+          "value": 13,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 13 after retreating when attacked"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "attribute_guerrilla_deploy",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attribute: Vanguard Deployment"
+            }
+          ],
+          "priority": 620,
+          "icon_negative": "attribute_guerrilla_deploy",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc09_political_party_tmb_arkhan": {
     "key": "wh2_dlc09_political_party_tmb_arkhan",
@@ -181,7 +265,122 @@
           "data": "Soul-stealing"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "wh_main_vmp_vampire_counts/variable_upkeep",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enables recruitment of certain Vampire Count units"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "wh_main_vmp_vampire_counts/variable_upkeep",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -50 with Tomb Kings"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with Vampire Counts"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "magic",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Winds of Magic power reserve: 10"
+            }
+          ],
+          "priority": 15,
+          "icon_negative": "magic",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "religion_undeath",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Vampiric corruption does not affect Public order"
+            }
+          ],
+          "priority": 80,
+          "icon_negative": "religion_undeath",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "melee",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 5 for embedded "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "defence",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee defence: 5 for embedded "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 111,
+          "icon_negative": "defence",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc09_political_party_tmb_khalida": {
     "key": "wh2_dlc09_political_party_tmb_khalida",
@@ -278,7 +477,91 @@
           "data": "Poison attacks"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_jungle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Jungle"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_jungle",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with Tomb Kings"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "ammo",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Ammunition: 20%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "ammo",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "phase_posion",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enables poison attacks"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "phase_posion",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "disaster",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attrition: -50% casualties suffered from all attrition"
+            }
+          ],
+          "priority": 100,
+          "icon_negative": "disaster",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "religion",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Untainted: 3"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc09_political_party_tmb_khatep": {
     "key": "wh2_dlc09_political_party_tmb_khatep",
@@ -363,7 +646,104 @@
           "data": "Canopic Magic"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_mountain",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Mountain"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_mountain",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "canopic_jars",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Canopic Jars generated: 2 per turn"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "canopic_jars",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": -40,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -40 with Dark Elves"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "campaign_movement",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 5%"
+            }
+          ],
+          "priority": 13,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "replenishment",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualty replenishment rate: 10%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "replenishment",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "wizard",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero capacity: 2 for Liche Priests"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wizard",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero recruit rank: 3 for Liche Priests"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc09_political_party_tmb_settra": {
     "key": "wh2_dlc09_political_party_tmb_settra",
@@ -448,7 +828,78 @@
           "data": "Canopic Magic"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "growth",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Growth: 10"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "growth",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "public_order",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Public order: 2"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "public_order",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "construction",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction time: -1 for Province Capital/Settlement buildings"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "construction",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "general_ability",
+          "value": 100,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership aura size: 100%"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "replenishment",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualty replenishment rate: 10% for Tomb Guard and Skeleton Chariot units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "replenishment",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc09_political_party_vor_skv_tretch_craventail": {
     "key": "wh2_dlc09_political_party_vor_skv_tretch_craventail",
@@ -551,7 +1002,91 @@
           "data": "Charge defence against large foes"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_frozen",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Frozen"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_frozen",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "trait_climate_jungle",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Unpleasant Climate: Jungle"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "trait_climate_jungle",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "public_order",
+          "value": 4,
+          "description": [
+            {
+              "type": "text",
+              "data": "Public order: 4 whenever a diplomatic treaty is broken"
+            }
+          ],
+          "priority": 4,
+          "icon_negative": "public_order",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "melee",
+          "value": 13,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 13 during ambushes"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "melee",
+          "value": 13,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 13 after retreating when attacked"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "attribute_guerrilla_deploy",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attribute: Vanguard Deployment"
+            }
+          ],
+          "priority": 620,
+          "icon_negative": "attribute_guerrilla_deploy",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc09_political_party_vor_tmb_arkhan": {
     "key": "wh2_dlc09_political_party_vor_tmb_arkhan",
@@ -632,7 +1167,122 @@
           "data": "Soul-stealing"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "wh_main_vmp_vampire_counts/variable_upkeep",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enables recruitment of certain Vampire Count units"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "wh_main_vmp_vampire_counts/variable_upkeep",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -50 with Tomb Kings"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with Vampire Counts"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "magic",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Winds of Magic power reserve: 10"
+            }
+          ],
+          "priority": 15,
+          "icon_negative": "magic",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "religion_undeath",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Vampiric corruption does not affect Public order"
+            }
+          ],
+          "priority": 80,
+          "icon_negative": "religion_undeath",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "melee",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 5 for embedded "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "defence",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee defence: 5 for embedded "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 111,
+          "icon_negative": "defence",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc09_political_party_vor_tmb_khalida": {
     "key": "wh2_dlc09_political_party_vor_tmb_khalida",
@@ -729,7 +1379,91 @@
           "data": "Poison attacks"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_jungle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Jungle"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_jungle",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with Tomb Kings"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "ammo",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Ammunition: 20%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "ammo",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "phase_posion",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enables poison attacks"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "phase_posion",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "disaster",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attrition: -50% casualties suffered from all attrition"
+            }
+          ],
+          "priority": 100,
+          "icon_negative": "disaster",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "religion",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Untainted: 3"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc09_political_party_vor_tmb_khatep": {
     "key": "wh2_dlc09_political_party_vor_tmb_khatep",
@@ -814,7 +1548,104 @@
           "data": "Canopic Magic"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_mountain",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Mountain"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_mountain",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "canopic_jars",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Canopic Jars generated: 2 per turn"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "canopic_jars",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": -40,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -40 with Dark Elves"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "campaign_movement",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 5%"
+            }
+          ],
+          "priority": 13,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "replenishment",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualty replenishment rate: 10%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "replenishment",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "wizard",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero capacity: 2 for Liche Priests"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wizard",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero recruit rank: 3 for Liche Priests"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc09_political_party_vor_tmb_settra": {
     "key": "wh2_dlc09_political_party_vor_tmb_settra",
@@ -899,7 +1730,78 @@
           "data": "Canopic Magic"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "growth",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Growth: 10"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "growth",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "public_order",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Public order: 2"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "public_order",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "construction",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction time: -1 for Province Capital/Settlement buildings"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "construction",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "general_ability",
+          "value": 100,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership aura size: 100%"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "replenishment",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualty replenishment rate: 10% for Tomb Guard and Skeleton Chariot units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "replenishment",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc10_political_party_def_hellebron": {
     "key": "wh2_dlc10_political_party_def_hellebron",
@@ -988,7 +1890,100 @@
           "data": "Dodge"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "dlc10_death_night",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Can sacrifice "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_slaves"
+            },
+            {
+              "type": "text",
+              "data": "slaves to trigger a Death Night"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "dlc10_death_night",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_blood_voyage",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Death Night spawns an allied Blood Voyage army"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "dlc10_blood_voyage",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_death_night",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Failure to hold a Death Night causes penalties"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "dlc10_death_night",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "death_hag",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero capacity: 2 for Death Hags"
+            }
+          ],
+          "priority": 7,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualties captured post-battle: 25%"
+            }
+          ],
+          "priority": 15,
+          "icon_negative": "military",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Witch Elves, Sisters of Slaughter and Har Ganeth Executioners"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh2_dlc10_political_party_hef_alarielle": {
     "key": "wh2_dlc10_political_party_hef_alarielle",
@@ -1061,7 +2056,104 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "dlc10_defender_of_ulthuan",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Gains bonuses when all of Ulthuan is held by High Elves"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "dlc10_defender_of_ulthuan",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_defender_of_ulthuan",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Receives penalties when regions within Ulthuan are not held by High Elves"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "dlc10_defender_of_ulthuan",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "wh2_dlc10_hef_handmaiden",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero capacity: 2 for Handmaidens"
+            }
+          ],
+          "priority": 6,
+          "icon_negative": "wh2_dlc10_hef_handmaiden",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": -75,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite cost: -75% for Invocation of Isha"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "dlc10_power_of_nature",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Alarielle leaves lingering bonuses on regions she visits"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "dlc10_power_of_nature",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_mortal_torment",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Alarielle weakens as Chaos grows stronger"
+            }
+          ],
+          "priority": 4,
+          "icon_negative": "dlc10_mortal_torment",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "ranged_damage",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Missile damage: 15% for Sisters of Avelorn and Handmaiden units"
+            }
+          ],
+          "priority": 10,
+          "icon_negative": "ranged_damage",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc10_political_party_hef_alith_anar": {
     "key": "wh2_dlc10_political_party_hef_alith_anar",
@@ -1150,7 +2242,91 @@
           "data": "Vanguard deployment"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_wasteland",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Wasteland"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_wasteland",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_assassination_targets",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Eliminating characters that are Marked for Death grants various rewards"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "dlc10_assassination_targets",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "turns",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Global recruitment duration: -1 turn for all units"
+            }
+          ],
+          "priority": 130,
+          "icon_negative": "turns",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "campaign_movement",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 10% for armies"
+            }
+          ],
+          "priority": 301,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Shadow-walkers units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "icon_effects_ambush",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Ambush success chance: 25%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "icon_effects_ambush",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc10_political_party_vor_def_hellebron": {
     "key": "wh2_dlc10_political_party_vor_def_hellebron",
@@ -1239,7 +2415,100 @@
           "data": "Dodge"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "dlc10_death_night",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Can sacrifice "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_slaves"
+            },
+            {
+              "type": "text",
+              "data": "slaves to trigger a Death Night"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "dlc10_death_night",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_blood_voyage",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Death Night spawns an allied Blood Voyage army"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "dlc10_blood_voyage",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_death_night",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Failure to hold a Death Night causes penalties"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "dlc10_death_night",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "death_hag",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero capacity: 2 for Death Hags"
+            }
+          ],
+          "priority": 7,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualties captured post-battle: 25%"
+            }
+          ],
+          "priority": 15,
+          "icon_negative": "military",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Witch Elves, Sisters of Slaughter and Har Ganeth Executioners"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh2_dlc10_political_party_vor_hef_alarielle": {
     "key": "wh2_dlc10_political_party_vor_hef_alarielle",
@@ -1312,7 +2581,104 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "dlc10_defender_of_ulthuan",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Gains bonuses when all of Ulthuan is held by High Elves"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "dlc10_defender_of_ulthuan",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_defender_of_ulthuan",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Receives penalties when regions within Ulthuan are not held by High Elves"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "dlc10_defender_of_ulthuan",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "wh2_dlc10_hef_handmaiden",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero capacity: 2 for Handmaidens"
+            }
+          ],
+          "priority": 6,
+          "icon_negative": "wh2_dlc10_hef_handmaiden",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": -75,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite cost: -75% for Invocation of Isha"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "dlc10_power_of_nature",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Alarielle leaves lingering bonuses on regions she visits"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "dlc10_power_of_nature",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_mortal_torment",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Alarielle weakens as Chaos grows stronger"
+            }
+          ],
+          "priority": 4,
+          "icon_negative": "dlc10_mortal_torment",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "ranged_damage",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Missile damage: 15% for Sisters of Avelorn and Handmaiden units"
+            }
+          ],
+          "priority": 10,
+          "icon_negative": "ranged_damage",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc10_political_party_vor_hef_alith_anar": {
     "key": "wh2_dlc10_political_party_vor_hef_alith_anar",
@@ -1401,7 +2767,91 @@
           "data": "Vanguard deployment"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_wasteland",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Wasteland"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_wasteland",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "dlc10_assassination_targets",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Eliminating characters that are Marked for Death grants various rewards"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "dlc10_assassination_targets",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "turns",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Global recruitment duration: -1 turn for all units"
+            }
+          ],
+          "priority": 130,
+          "icon_negative": "turns",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "campaign_movement",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 10% for armies"
+            }
+          ],
+          "priority": 301,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Shadow-walkers units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "icon_effects_ambush",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Ambush success chance: 25%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "icon_effects_ambush",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_cst_noctilus_ruler": {
     "key": "wh2_dlc11_political_party_cst_noctilus_ruler",
@@ -1504,7 +2954,78 @@
           "data": "Aquatic"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Gain war-declaration missions with unique rewards"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "army",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Pirate crew recruitment capacity 2"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "army",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "turns",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment duration: -1 turn for Necrofex Colossus units (minimum 1)"
+            }
+          ],
+          "priority": 130,
+          "icon_negative": "turns",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -20% for Necrofex Colossus units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "weapon_damage",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon strength: 15% for large units"
+            }
+          ],
+          "priority": 108,
+          "icon_negative": "weapon_damage",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_cst_sartosa_ruler": {
     "key": "wh2_dlc11_political_party_cst_sartosa_ruler",
@@ -1599,7 +3120,104 @@
           "data": "Aquatic"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": -100,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -100 with Norscan Tribes"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasure_map",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chance of finding Treasure Maps: 25%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasure_map",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from raiding: 50%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from sacking settlements: 20%"
+            }
+          ],
+          "priority": 198,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "morale_character",
+          "value": 12,
+          "description": [
+            {
+              "type": "text",
+              "data": "Character's aura leadership effect: 12"
+            }
+          ],
+          "priority": 6,
+          "icon_negative": "morale_character",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "weapon_damage",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon strength: 20% for all Sartosan units"
+            }
+          ],
+          "priority": 108,
+          "icon_negative": "weapon_damage",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "melee",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 8 for all Sartosan units"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_cst_the_drowned_ruler": {
     "key": "wh2_dlc11_political_party_cst_the_drowned_ruler",
@@ -1684,7 +3302,78 @@
           "data": "Causes Terror"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "loyalty",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Loyalty: 2 for new recruits"
+            }
+          ],
+          "priority": 99,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -20% for Syreen and Mourngul units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "treasury",
+          "value": -20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment cost: -20% for Syreen and Mourngul units"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "resistance_physical",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Physical resistance: 5% for all units"
+            }
+          ],
+          "priority": 14,
+          "icon_negative": "resistance_physical",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "magical_attacks",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enables magical attacks"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "magical_attacks",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_def_lokhir_fellheart_ruler": {
     "key": "wh2_dlc11_political_party_def_lokhir_fellheart_ruler",
@@ -1767,7 +3456,78 @@
           "data": "Anti-infantry"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_jungle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Jungle"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_jungle",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "trait_climate_savannah",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Savannah"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_savannah",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from Slave Pens and Slave Markets: 50%"
+            }
+          ],
+          "priority": 176,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "admiral",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Every owned Major Port will allow the recruitment of a Black Ark"
+            }
+          ],
+          "priority": 280,
+          "icon_negative": "admiral",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Black Ark Corsairs units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_vampire_coast_ruler": {
     "key": "wh2_dlc11_political_party_vampire_coast_ruler",
@@ -1862,7 +3622,110 @@
           "data": "Fire Whilst Moving"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "morale",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 8 when fighting against Lizardmen"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": -60,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -60 with Lizardmen"
+            }
+          ],
+          "priority": 62,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "defence",
+          "value": 6,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee defence: 6 for "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords and "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 111,
+          "icon_negative": "defence",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "fractured_mind",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Luthor Harkon's mind is fractured - any one of his myriad different personalities may seize control!",
+              "style": "yellow"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "fractured_mind",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "resistance_magic",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Magic resistance: 25% for all units"
+            }
+          ],
+          "priority": 55,
+          "icon_negative": "resistance_magic",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "religion_undeath",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Vampiric corruption: 3"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion_undeath",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_vor_cst_noctilus_ruler": {
     "key": "wh2_dlc11_political_party_vor_cst_noctilus_ruler",
@@ -1965,7 +3828,78 @@
           "data": "Aquatic"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Gain war-declaration missions with unique rewards"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "army",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Pirate crew recruitment capacity 2"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "army",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "turns",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment duration: -1 turn for Necrofex Colossus units (minimum 1)"
+            }
+          ],
+          "priority": 130,
+          "icon_negative": "turns",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -20% for Necrofex Colossus units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "weapon_damage",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon strength: 15% for large units"
+            }
+          ],
+          "priority": 108,
+          "icon_negative": "weapon_damage",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_vor_cst_sartosa_ruler": {
     "key": "wh2_dlc11_political_party_vor_cst_sartosa_ruler",
@@ -2060,7 +3994,104 @@
           "data": "Aquatic"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": -100,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -100 with Norscan Tribes"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasure_map",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chance of finding Treasure Maps: 25%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasure_map",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from raiding: 50%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from sacking settlements: 20%"
+            }
+          ],
+          "priority": 198,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "morale_character",
+          "value": 12,
+          "description": [
+            {
+              "type": "text",
+              "data": "Character's aura leadership effect: 12"
+            }
+          ],
+          "priority": 6,
+          "icon_negative": "morale_character",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "weapon_damage",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon strength: 20% for all Sartosan units"
+            }
+          ],
+          "priority": 108,
+          "icon_negative": "weapon_damage",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "melee",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 8 for all Sartosan units"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_vor_cst_the_drowned_ruler": {
     "key": "wh2_dlc11_political_party_vor_cst_the_drowned_ruler",
@@ -2145,7 +4176,78 @@
           "data": "Causes Terror"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "loyalty",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Loyalty: 2 for new recruits"
+            }
+          ],
+          "priority": 99,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -20% for Syreen and Mourngul units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "treasury",
+          "value": -20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment cost: -20% for Syreen and Mourngul units"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "resistance_physical",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Physical resistance: 5% for all units"
+            }
+          ],
+          "priority": 14,
+          "icon_negative": "resistance_physical",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "magical_attacks",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enables magical attacks"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "magical_attacks",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_vor_def_lokhir_fellheart_ruler": {
     "key": "wh2_dlc11_political_party_vor_def_lokhir_fellheart_ruler",
@@ -2228,7 +4330,78 @@
           "data": "Anti-infantry"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_jungle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Jungle"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_jungle",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "trait_climate_savannah",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Savannah"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_savannah",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from Slave Pens and Slave Markets: 50%"
+            }
+          ],
+          "priority": 176,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "admiral",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Every owned Major Port will allow the recruitment of a Black Ark"
+            }
+          ],
+          "priority": 280,
+          "icon_negative": "admiral",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Black Ark Corsairs units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh2_dlc11_political_party_vor_vampire_coast_ruler": {
     "key": "wh2_dlc11_political_party_vor_vampire_coast_ruler",
@@ -2323,7 +4496,110 @@
           "data": "Fire Whilst Moving"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "morale",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 8 when fighting against Lizardmen"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": -60,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -60 with Lizardmen"
+            }
+          ],
+          "priority": 62,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "defence",
+          "value": 6,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee defence: 6 for "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords and "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 111,
+          "icon_negative": "defence",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "fractured_mind",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Luthor Harkon's mind is fractured - any one of his myriad different personalities may seize control!",
+              "style": "yellow"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "fractured_mind",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "resistance_magic",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Magic resistance: 25% for all units"
+            }
+          ],
+          "priority": 55,
+          "icon_negative": "resistance_magic",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "religion_undeath",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Vampiric corruption: 3"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion_undeath",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_def_malekith": {
     "key": "wh2_main_political_party_def_malekith",
@@ -2418,7 +4694,105 @@
           "data": "shielded"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "experience",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Malekith gives a percentage of XP earned to other "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "experience",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "diplomacy",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 30 with "
+            },
+            {
+              "type": "icon",
+              "category": "flags",
+              "data": "wh2_main_def_cult_of_pleasure"
+            },
+            {
+              "type": "text",
+              "data": " Cult of Pleasure"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "loyalty",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Loyalty: 2 for new recruits"
+            }
+          ],
+          "priority": 99,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "loyalty",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Increased chance of loyalty loss for "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords of a higher rank than Malekith"
+            }
+          ],
+          "priority": 99,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Black Guard of Naggarond, Dreadspears, Bleakswords and Darkshards units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh2_main_political_party_def_morathi": {
     "key": "wh2_main_political_party_def_morathi",
@@ -2501,7 +4875,144 @@
           "data": "Decent melee combatant"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "religion_chaos",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Spreads Chaos corruption"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "religion_chaos",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": -40,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -40 with the faction of "
+            },
+            {
+              "type": "icon",
+              "category": "flags",
+              "data": "wh2_dlc09_tmb_exiles_of_nehek"
+            },
+            {
+              "type": "text",
+              "data": "Exiles of Nehek"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with Dark Elves"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero action cost: -50%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "treasury",
+          "value": -25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -25% for Sorcery buildings"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "religion_chaos",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chaos corruption: 1"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion_chaos",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "loyalty",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "On turn start, "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords in this character's region have a chance to gain 2 loyalty"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_hef_teclis": {
     "key": "wh2_main_political_party_hef_teclis",
@@ -2574,7 +5085,65 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 10 with Men and High Elves"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wizard",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero recruit rank: 5 for Mages"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "magic",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Winds of Magic power reserve: 30"
+            }
+          ],
+          "priority": 15,
+          "icon_negative": "magic",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "spell_ability",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Bound spell: \"Fireball\""
+            }
+          ],
+          "priority": 600,
+          "icon_negative": "spell_ability",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_hef_tyrion": {
     "key": "wh2_main_political_party_hef_tyrion",
@@ -2661,7 +5230,78 @@
           "data": "Armoured"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with High Elves"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "construction",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction time: -50% for Shrine of Khaine building"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "construction",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "turns",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment duration: -1 turn for infantry and cavalry units (minimum 1)"
+            }
+          ],
+          "priority": 130,
+          "icon_negative": "turns",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Spearmen, Archers and Silver Helms units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "experience",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: 3 for Lothern Sea Guard units"
+            }
+          ],
+          "priority": 120,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_lzd_kroq_gar": {
     "key": "wh2_main_political_party_lzd_kroq_gar",
@@ -2762,7 +5402,91 @@
           "data": "Armour-piercing"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "military_spending",
+          "value": -10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -10% for all units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Saurus and Cold One units"
+            }
+          ],
+          "priority": 69,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "armour",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Armour: 20 for Stegadon, Bastiladon, Terradon & Carnosaur units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "armour",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10 for Stegadon, Bastiladon, Terradon & Carnosaur units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "icon_effects_ambush",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Ambush success chance: 25%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "icon_effects_ambush",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_lzd_lord_mazdamundi": {
     "key": "wh2_main_political_party_lzd_lord_mazdamundi",
@@ -2843,7 +5567,78 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": -10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -10 with most factions"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -50% for Star Chamber buildings"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "effect_rite",
+          "value": -30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite cost: -30%"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "slann_mage_priest",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Slann Mage-Priest capacity: 1"
+            }
+          ],
+          "priority": 303,
+          "icon_negative": "slann_mage_priest",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Temple Guards units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh2_main_political_party_skv_lord_skrolk": {
     "key": "wh2_main_political_party_skv_lord_skrolk",
@@ -2928,7 +5723,65 @@
           "data": "Pox-tongue"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -50% for Pox Cauldron, Pestilent Nave and Plague Bailey buildings"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "effect_rite",
+          "value": -75,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite cost: -75% for The Pestilent Scheme"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Plague Monks, Plague Monk Censer Bearers, Plagueclaw Catapult and Plague Priest units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "religion_skaven",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Skaven corruption: 3"
+            }
+          ],
+          "priority": 190,
+          "icon_negative": "religion_skaven",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_skv_queek_headtaker": {
     "key": "wh2_main_political_party_skv_queek_headtaker",
@@ -3025,7 +5878,100 @@
           "data": "Armour-piercing"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "loyalty",
+          "value": -2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Loyalty: -2 for Grey Seer recruits"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "experience",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Queek Headtaker steals a percentage of XP earned by other "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "melee_character",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 10 when fighting against Dwarfs and Greenskin Tribes"
+            }
+          ],
+          "priority": 55,
+          "icon_negative": "melee_character",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "weapon_damage_character",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon strength: 10% when fighting against Dwarfs and Greenskin Tribes"
+            }
+          ],
+          "priority": 77,
+          "icon_negative": "weapon_damage_character",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Stormvermin and Clanrats units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "general_ability",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Army ability number of uses: +2 for \"The Menace Below\""
+            }
+          ],
+          "priority": 705,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_vor_def_malekith": {
     "key": "wh2_main_political_party_vor_def_malekith",
@@ -3120,7 +6066,105 @@
           "data": "shielded"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "experience",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Malekith gives a percentage of XP earned to other "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "experience",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "diplomacy",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 30 with "
+            },
+            {
+              "type": "icon",
+              "category": "flags",
+              "data": "wh2_main_def_cult_of_pleasure"
+            },
+            {
+              "type": "text",
+              "data": " Cult of Pleasure"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "loyalty",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Loyalty: 2 for new recruits"
+            }
+          ],
+          "priority": 99,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "loyalty",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Increased chance of loyalty loss for "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords of a higher rank than Malekith"
+            }
+          ],
+          "priority": 99,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Black Guard of Naggarond, Dreadspears, Bleakswords and Darkshards units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh2_main_political_party_vor_def_morathi": {
     "key": "wh2_main_political_party_vor_def_morathi",
@@ -3203,7 +6247,144 @@
           "data": "Decent melee combatant"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "religion_chaos",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Spreads Chaos corruption"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "religion_chaos",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": -40,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -40 with the faction of "
+            },
+            {
+              "type": "icon",
+              "category": "flags",
+              "data": "wh2_dlc09_tmb_exiles_of_nehek"
+            },
+            {
+              "type": "text",
+              "data": "Exiles of Nehek"
+            }
+          ],
+          "priority": 2,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with Dark Elves"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero action cost: -50%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "treasury",
+          "value": -25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -25% for Sorcery buildings"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "religion_chaos",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chaos corruption: 1"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion_chaos",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "loyalty",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "On turn start, "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords in this character's region have a chance to gain 2 loyalty"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_vor_hef_teclis": {
     "key": "wh2_main_political_party_vor_hef_teclis",
@@ -3276,7 +6457,65 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 10 with Men and High Elves"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wizard",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero recruit rank: 5 for Mages"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "magic",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Winds of Magic power reserve: 30"
+            }
+          ],
+          "priority": 15,
+          "icon_negative": "magic",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "spell_ability",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Bound spell: \"Fireball\""
+            }
+          ],
+          "priority": 600,
+          "icon_negative": "spell_ability",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_vor_hef_tyrion": {
     "key": "wh2_main_political_party_vor_hef_tyrion",
@@ -3363,7 +6602,78 @@
           "data": "Armoured"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with High Elves"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "construction",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction time: -50% for Shrine of Khaine building"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "construction",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "turns",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment duration: -1 turn for infantry and cavalry units (minimum 1)"
+            }
+          ],
+          "priority": 130,
+          "icon_negative": "turns",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Spearmen, Archers and Silver Helms units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "experience",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: 3 for Lothern Sea Guard units"
+            }
+          ],
+          "priority": 120,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_vor_lzd_kroq_gar": {
     "key": "wh2_main_political_party_vor_lzd_kroq_gar",
@@ -3464,7 +6774,91 @@
           "data": "Armour-piercing"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "military_spending",
+          "value": -10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -10% for all units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Saurus and Cold One units"
+            }
+          ],
+          "priority": 69,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "armour",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Armour: 20 for Stegadon, Bastiladon, Terradon & Carnosaur units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "armour",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10 for Stegadon, Bastiladon, Terradon & Carnosaur units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "icon_effects_ambush",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Ambush success chance: 25%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "icon_effects_ambush",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_vor_lzd_lord_mazdamundi": {
     "key": "wh2_main_political_party_vor_lzd_lord_mazdamundi",
@@ -3545,7 +6939,78 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": -10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -10 with most factions"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -50% for Star Chamber buildings"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "effect_rite",
+          "value": -30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite cost: -30%"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "slann_mage_priest",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Slann Mage-Priest capacity: 1"
+            }
+          ],
+          "priority": 303,
+          "icon_negative": "slann_mage_priest",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Temple Guards units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh2_main_political_party_vor_skv_lord_skrolk": {
     "key": "wh2_main_political_party_vor_skv_lord_skrolk",
@@ -3630,7 +7095,65 @@
           "data": "Pox-tongue"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -50% for Pox Cauldron, Pestilent Nave and Plague Bailey buildings"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "effect_rite",
+          "value": -75,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite cost: -75% for The Pestilent Scheme"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Plague Monks, Plague Monk Censer Bearers, Plagueclaw Catapult and Plague Priest units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "religion_skaven",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Skaven corruption: 3"
+            }
+          ],
+          "priority": 190,
+          "icon_negative": "religion_skaven",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh2_main_political_party_vor_skv_queek_headtaker": {
     "key": "wh2_main_political_party_vor_skv_queek_headtaker",
@@ -3727,7 +7250,100 @@
           "data": "Armour-piercing"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "loyalty",
+          "value": -2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Loyalty: -2 for Grey Seer recruits"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "experience",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Queek Headtaker steals a percentage of XP earned by other "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "melee_character",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 10 when fighting against Dwarfs and Greenskin Tribes"
+            }
+          ],
+          "priority": 55,
+          "icon_negative": "melee_character",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "weapon_damage_character",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon strength: 10% when fighting against Dwarfs and Greenskin Tribes"
+            }
+          ],
+          "priority": 77,
+          "icon_negative": "weapon_damage_character",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Stormvermin and Clanrats units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "general_ability",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Army ability number of uses: +2 for \"The Menace Below\""
+            }
+          ],
+          "priority": 705,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc03_political_party_beastmen_malagor": {
     "key": "wh_dlc03_political_party_beastmen_malagor",
@@ -3808,7 +7424,104 @@
           "data": "Wild Calling"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "campaign_movement",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 10%"
+            }
+          ],
+          "priority": 100,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wizard",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero capacity: 2 for Bray-Shamans"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "growth",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Horde growth: 2"
+            }
+          ],
+          "priority": 141,
+          "icon_negative": "growth",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 30 with Beastmen Warherds"
+            }
+          ],
+          "priority": 895,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "morale",
+          "value": -8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enemy leadership: -8"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "replenishment",
+          "value": -8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enemy casualty replenishment rate: -8%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "replenishment",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "wizard",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero recruit rank: 3 for Bray-Shamans"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc03_political_party_beastmen_morghur": {
     "key": "wh_dlc03_political_party_beastmen_morghur",
@@ -3879,7 +7592,104 @@
           "data": "Poison attacks"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "religion_chaos",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chaos corruption: 3"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion_chaos",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: 30% for Minotaur units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "military_spending",
+          "value": -30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -30% for Chaos Spawn units"
+            }
+          ],
+          "priority": 117,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "disaster",
+          "value": 12,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attrition: 12% casualties suffered from Chaos territory attrition"
+            }
+          ],
+          "priority": 13,
+          "icon_negative": "disaster",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "resistance_missile",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Missile resistance: 20% for Chaos Spawn units"
+            }
+          ],
+          "priority": 55,
+          "icon_negative": "resistance_missile",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wound_time",
+          "value": -100,
+          "description": [
+            {
+              "type": "text",
+              "data": "Morghur will always remain wounded for no more than 1 turn"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "wound_time",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "defence",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee defence: 8 for Chaos Spawn units"
+            }
+          ],
+          "priority": 111,
+          "icon_negative": "defence",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc03_political_party_beastmen_ruler": {
     "key": "wh_dlc03_political_party_beastmen_ruler",
@@ -3956,7 +7766,104 @@
           "data": "Armoured"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10 when fighting against Men"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 40,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from raiding: 40%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "charge",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Charge bonus: 10 for Bestigor Herd units"
+            }
+          ],
+          "priority": 121,
+          "icon_negative": "charge",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -30% for Bestigor units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment cost: -50% for Bestigor units"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "experience",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: 3 for Bestigor units"
+            }
+          ],
+          "priority": 120,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "turns",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment duration: -1 turn for Bestigor units"
+            }
+          ],
+          "priority": 130,
+          "icon_negative": "turns",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh_dlc04_political_party_empire_volkmar": {
     "key": "wh_dlc04_political_party_empire_volkmar",
@@ -4021,7 +7928,104 @@
           "data": "Battle Prayers"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "item_ability",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Magic item drop chance: 20%"
+            }
+          ],
+          "priority": 8,
+          "icon_negative": "item_ability",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "weapon_damage",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon strength: 30% for Flagellants units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "weapon_damage",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "warrior_priest",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero recruit rank: 2 for Warrior Priests"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "warrior_priest",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -30% for Flagellant units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "replenishment",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualty replenishment rate: 30% for Flagellants units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "replenishment",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "defence",
+          "value": 14,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee defence: 14 for Flagellants units"
+            }
+          ],
+          "priority": 111,
+          "icon_negative": "defence",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "resistance_physical",
+          "value": 12,
+          "description": [
+            {
+              "type": "text",
+              "data": "Physical resistance: 12% for Flagellants units"
+            }
+          ],
+          "priority": 700,
+          "icon_negative": "resistance_physical",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc04_political_party_vampire_helman": {
     "key": "wh_dlc04_political_party_vampire_helman",
@@ -4098,7 +8102,78 @@
           "data": "Nagashism"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "charge",
+          "value": 12,
+          "description": [
+            {
+              "type": "text",
+              "data": "Charge bonus: 12 for Corpse Cart units"
+            }
+          ],
+          "priority": 91,
+          "icon_negative": "charge",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "replenishment",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualty replenishment rate: 20%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "replenishment",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "experience",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: 3 for Corpse Cart units"
+            }
+          ],
+          "priority": 120,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "technology",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Research rate: 30%"
+            }
+          ],
+          "priority": 998,
+          "icon_negative": "technology",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "phase_posion",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "All units in Helman Ghorst's army receive poison attacks"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "phase_posion",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc05_political_party_wood_elves_durthu": {
     "key": "wh_dlc05_political_party_wood_elves_durthu",
@@ -4186,7 +8261,91 @@
           "data": "Armoured"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero recruitment cost: -50% for Branchwraiths"
+            }
+          ],
+          "priority": 99,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "melee",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 10 during forest battles"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "amber_bundle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Elite Elven units cost Amber to recruit"
+            }
+          ],
+          "priority": 201,
+          "icon_negative": "amber_bundle",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "disaster",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "All units in Durthu's army are immune to all attrition"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "disaster",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -30% for forest spirit units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "charge",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Charge bonus: 10 for Dryads, Tree Kin and Treemen units"
+            }
+          ],
+          "priority": 121,
+          "icon_negative": "charge",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc05_political_party_wood_elves_ruler": {
     "key": "wh_dlc05_political_party_wood_elves_ruler",
@@ -4278,7 +8437,91 @@
           "data": "Anti-infantry"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "archer",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enables the unique Wild Hunt event"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "archer",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10 during forest battles"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -15% for all cavalry units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "amber_bundle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Elite forest spirit units cost Amber to recruit"
+            }
+          ],
+          "priority": 201,
+          "icon_negative": "amber_bundle",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "weapon_damage",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon strength: 20% for Wild Riders units"
+            }
+          ],
+          "priority": 108,
+          "icon_negative": "weapon_damage",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "charge",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Charge bonus: 8 for Wild Riders units"
+            }
+          ],
+          "priority": 121,
+          "icon_negative": "charge",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc06_political_party_belegar_ruler": {
     "key": "wh_dlc06_political_party_belegar_ruler",
@@ -4376,7 +8619,104 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "military_spending",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: +50% until Karak Eight Peaks is recaptured"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10 when laying siege"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "agent",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Starts with four Clan Angrund ancestor Heroes"
+            }
+          ],
+          "priority": 62,
+          "icon_negative": "agent",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "construction",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Unique building chain available at Karak Eight Peaks"
+            }
+          ],
+          "priority": 63,
+          "icon_negative": "construction",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "attribute_can_siege",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attribute: Siege Attacker"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "attribute_can_siege",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "attribute_guerrilla_deploy",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attribute: Vanguard Deployment during Underway battles"
+            }
+          ],
+          "priority": 620,
+          "icon_negative": "attribute_guerrilla_deploy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10 when fighting against Greenskins and Skaven"
+            }
+          ],
+          "priority": 703,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc06_political_party_skarsnik_ruler": {
     "key": "wh_dlc06_political_party_skarsnik_ruler",
@@ -4466,7 +8806,91 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "army",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Can only recruit Orc units from Karak Eight Peaks"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "army",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero action cost: -50% and receive +100%% experience"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "military_spending",
+          "value": -40,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep and recruitment cost: -40% for Goblin units"
+            }
+          ],
+          "priority": 4,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "construction",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Unique building chain available at Karak Eight Peaks"
+            }
+          ],
+          "priority": 63,
+          "icon_negative": "construction",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "subterfuge",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enables lightning strike battles when reinforcements are present"
+            }
+          ],
+          "priority": 10,
+          "icon_negative": "subterfuge",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "charge",
+          "value": 14,
+          "description": [
+            {
+              "type": "text",
+              "data": "Charge bonus: 14 for Night Goblin Squig Hoppers units"
+            }
+          ],
+          "priority": 121,
+          "icon_negative": "charge",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc06_political_party_wurrzag_ruler": {
     "key": "wh_dlc06_political_party_wurrzag_ruler",
@@ -4554,7 +8978,78 @@
           "data": "Stompy spellz"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "agent",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Enemy Hero action success chance: -50%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "agent",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "charge",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Charge bonus: 25 for Savage Orc units"
+            }
+          ],
+          "priority": 121,
+          "icon_negative": "charge",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "resistance_physical",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Physical resistance: 15% for Savage Orc units"
+            }
+          ],
+          "priority": 14,
+          "icon_negative": "resistance_physical",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Savage Orc units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment cost: -50% for Savage Orc units"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh_dlc07_political_party_bretonnia_alberic": {
     "key": "wh_dlc07_political_party_bretonnia_alberic",
@@ -4637,7 +9132,91 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "amber_bundle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Alberic starts with the Knight's Vow unlocked"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "amber_bundle",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from trade: 25%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "experience",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: 2 for Bretonnian Knight units"
+            }
+          ],
+          "priority": 120,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "turns",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment duration: -1 turn for Bretonnian Knight units (minimum 1)"
+            }
+          ],
+          "priority": 130,
+          "icon_negative": "turns",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "chivalry_positive",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chivalry: 10"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "chivalry_negative",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "defence",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee defence: 10 for Knights of the Realm units"
+            }
+          ],
+          "priority": 111,
+          "icon_negative": "defence",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc07_political_party_bretonnia_fay": {
     "key": "wh_dlc07_political_party_bretonnia_fay",
@@ -4702,7 +9281,91 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "peasant",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Image of the Lady: 5 peasants available to the faction"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "peasant",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": 200,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep greatly reduced for Grail Guardian units"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "replenishment",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualty replenishment rate: 15%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "replenishment",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "chivalry_positive",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chivalry: 10"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "chivalry_negative",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "general_ability",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Passive ability: \"The Blessing of the Lady\""
+            }
+          ],
+          "priority": 600,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "attribute_causes_fear",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attribute: Causes Fear"
+            }
+          ],
+          "priority": 620,
+          "icon_negative": "attribute_causes_fear",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc07_political_party_bretonnia_ruler": {
     "key": "wh_dlc07_political_party_bretonnia_ruler",
@@ -4779,7 +9442,113 @@
           "data": "shielded"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "amber_bundle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Louen starts with all Knightly Vows unlocked"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "amber_bundle",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "campaign_movement",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 10%"
+            }
+          ],
+          "priority": 100,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "general_ability",
+          "value": 50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership aura size: 50% for all "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords (when attacking)"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "chivalry_positive",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chivalry: 10"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "chivalry_negative",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "melee",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 8 when fighting against Chaos, Undead and Greenskins"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale",
+          "value": 12,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 12 when fighting against forces of Chaos, Undead and Greenskins"
+            }
+          ],
+          "priority": 108,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "general_ability",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Passive ability: \"The Blessing of the Lady\""
+            }
+          ],
+          "priority": 600,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc08_political_party_norsca_ruler": {
     "key": "wh_dlc08_political_party_norsca_ruler",
@@ -4868,7 +9637,78 @@
           "data": "Duellist"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "melee",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 15 for all Mammoth units"
+            }
+          ],
+          "priority": 69,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -15% for Marauder units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "attribute_can_siege",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attribute: Siege Attacker"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "attribute_can_siege",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Reinforcement range: 30%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "attribute_causes_fear",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attribute: Causes Fear"
+            }
+          ],
+          "priority": 620,
+          "icon_negative": "attribute_causes_fear",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_dlc08_political_party_norsca_throgg": {
     "key": "wh_dlc08_political_party_norsca_throgg",
@@ -4957,7 +9797,91 @@
           "data": "Regeneration"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "resistance_physical",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Physical resistance: 15% for all Norscan Troll & Norscan Ice Troll units"
+            }
+          ],
+          "priority": 14,
+          "icon_negative": "resistance_physical",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -20% for all Norscan Troll & Norscan Ice Troll units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "attribute_can_siege",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attribute: Siege Attacker"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "attribute_can_siege",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "public_order",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Public order: 1"
+            }
+          ],
+          "priority": 6,
+          "icon_negative": "public_order",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "disaster",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "All units in Throgg's army are immune to all attrition"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "disaster",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "religion_chaos",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chaos corruption: 2"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion_chaos",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_chaos_kholek": {
     "key": "wh_main_political_party_chaos_kholek",
@@ -5042,7 +9966,78 @@
           "data": "Very fast"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "religion_chaos",
+          "value": 4,
+          "description": [
+            {
+              "type": "text",
+              "data": "Chaos corruption: 4"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion_chaos",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -60,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment cost: -60% for Dragon Ogre units"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "icon_effects_ambush",
+          "value": -20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Ambush defence chance: -20%"
+            }
+          ],
+          "priority": 110,
+          "icon_negative": "icon_effects_ambush",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "wh_main_chs_chaos/military_spending",
+          "value": -30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -30% for Dragon Ogre units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "wh_main_chs_chaos/military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "melee",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 10 for Dragon Ogre Shaggoth units"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_chaos_ruler": {
     "key": "wh_main_political_party_chaos_ruler",
@@ -5135,7 +10130,78 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10 for Chaos Warrior units"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment cost: -30% for Chaos Warrior units"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "diplomacy",
+          "value": -30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: -30 with all factions"
+            }
+          ],
+          "priority": 145,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "resistance_ward_save",
+          "value": 5,
+          "description": [
+            {
+              "type": "text",
+              "data": "Ward save: 5% for all units"
+            }
+          ],
+          "priority": 55,
+          "icon_negative": "resistance_ward_save",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from razing settlements: 50%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_chaos_sigvald": {
     "key": "wh_main_political_party_chaos_sigvald",
@@ -5214,7 +10280,109 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with Norscan Tribes"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 15 when fighting against Men"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "armour",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Armour: 15 for "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lords and embedded "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 110,
+          "icon_negative": "armour",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "experience",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: 3 for Marauder units"
+            }
+          ],
+          "priority": 120,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "growth",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Horde growth: 3"
+            }
+          ],
+          "priority": 141,
+          "icon_negative": "growth",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -60,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -60% for Chaos Marauder units"
+            }
+          ],
+          "priority": 502,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ]
+    }
   },
   "wh_main_political_party_dwarf_grombrindal": {
     "key": "wh_main_political_party_dwarf_grombrindal",
@@ -5299,7 +10467,78 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "subterranean",
+          "value": 60,
+          "description": [
+            {
+              "type": "text",
+              "data": "Evasion chance when using the Underway: 60%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "subterranean",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "weapon_damage_character",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon strength: 20% when fighting against Elves"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "weapon_damage_character",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "god_effect_grungni",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Can call upon the power of the Ancestor Gods"
+            }
+          ],
+          "priority": 600,
+          "icon_negative": "god_effect_grungni",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military",
+          "value": 50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Reinforcement range: 50%"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_dwarf_ruler": {
     "key": "wh_main_political_party_dwarf_ruler",
@@ -5370,7 +10609,91 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 20 with Dwarf Realms"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -25% for Military Recruitment buildings"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "military_spending",
+          "value": -15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -15% for Longbeards and Hammerers units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "experience",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: 3 for Hammerers units"
+            }
+          ],
+          "priority": 120,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "general_ability",
+          "value": 75,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership aura size: 75%"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale_character",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Character's aura leadership effect: 8"
+            }
+          ],
+          "priority": 6,
+          "icon_negative": "morale_character",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_dwarf_ungrim": {
     "key": "wh_main_political_party_dwarf_ungrim",
@@ -5455,7 +10778,104 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_frozen",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Frozen"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_frozen",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -75,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -75% for Slayer buildings"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "treasury",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruitment cost: -50% for Slayer units"
+            }
+          ],
+          "priority": 106,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "battle_movement",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Speed: 10% for infantry units"
+            }
+          ],
+          "priority": 115,
+          "icon_negative": "battle_movement",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "replenishment",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Casualty replenishment rate: 30% for Slayer units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "replenishment",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -25% for Slayer units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "melee",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 10 for Slayer units"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_empire_balthasar": {
     "key": "wh_main_political_party_empire_balthasar",
@@ -5524,7 +10944,100 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "armour",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Armour: 10 for all units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "armour",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wizard",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero capacity: 2 for Battle Wizards"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Battle Wizard "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "magic",
+          "value": -20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Winds of Magic cost: -20% for Lore of Metal"
+            }
+          ],
+          "priority": 68,
+          "icon_negative": "magic",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "ranged_damage",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Missile damage: 10% for artillery units"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "ranged_damage",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wizard",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero recruit rank: 2 for Battle Wizards"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_empire_ruler": {
     "key": "wh_main_political_party_empire_ruler",
@@ -5599,7 +11112,78 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "diplomacy",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 10 with Empire Provinces"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "army",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Lord recruit rank: 2"
+            }
+          ],
+          "priority": 51,
+          "icon_negative": "army",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "campaign_movement",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 10%"
+            }
+          ],
+          "priority": 100,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -15% for Reiksguard and Greatswords units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "morale",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 8"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_greenskins_azhag": {
     "key": "wh_main_political_party_greenskins_azhag",
@@ -5680,7 +11264,91 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "technology",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Research rate: 25%"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "technology",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -25% for settlement chain"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "construction",
+          "value": -1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction time: -1 for settlement chain"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "construction",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "income",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from sacking settlements: 25%"
+            }
+          ],
+          "priority": 198,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "general_ability",
+          "value": 75,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership aura size: 75%"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale_character",
+          "value": 8,
+          "description": [
+            {
+              "type": "text",
+              "data": "Character's aura leadership effect: 8"
+            }
+          ],
+          "priority": 6,
+          "icon_negative": "morale_character",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_greenskins_ruler": {
     "key": "wh_main_political_party_greenskins_ruler",
@@ -5761,7 +11429,91 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "army_morale",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Fightiness: 1 when in foreign territory"
+            }
+          ],
+          "priority": 25,
+          "icon_negative": "army_morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "campaign_movement",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 10%"
+            }
+          ],
+          "priority": 100,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -15% for Black Orcs and Big 'Uns units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "morale",
+          "value": 12,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 12 for Black Orc units"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "armour",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Armour: 10 for Black Orcs units"
+            }
+          ],
+          "priority": 110,
+          "icon_negative": "armour",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "income",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Income from post-battle loot: 30%"
+            }
+          ],
+          "priority": 201,
+          "icon_negative": "income",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_vampire_heinrich": {
     "key": "wh_main_political_party_vampire_heinrich",
@@ -5822,7 +11574,109 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "trait_climate_mountain",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Suitable Climate: Mountain"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "trait_climate_mountain",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "diplomacy",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Diplomatic relations: 30 with worshippers of Chaos"
+            }
+          ],
+          "priority": 5,
+          "icon_negative": "diplomacy",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wh_main_vmp_vampire_counts/military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Necromancer "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "wh_main_vmp_vampire_counts/military_spending",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "disaster",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "All units in Heinrich Kemmler's army are immune to non-Vampire Count territory attrition"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "disaster",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wizard",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero recruit rank: 2 for Necromancers"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "wizard",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "magic_character",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "In battle, Heinrich Kemmler can summon Krell, a powerful "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Hero"
+            }
+          ],
+          "priority": 999,
+          "icon_negative": "magic_character",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_main_political_party_vampire_ruler": {
     "key": "wh_main_political_party_vampire_ruler",
@@ -5903,7 +11757,91 @@
           "data": "Melee expert"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "blood_kiss",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Start with 1 Blood Kiss"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "blood_kiss",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "campaign_movement",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 10%"
+            }
+          ],
+          "priority": 100,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "wh_main_vmp_vampire_counts/military_spending",
+          "value": -15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -15% for Grave Guard and Black Knights units"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "wh_main_vmp_vampire_counts/military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "experience",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: 2 for Grave Guard and Black Knight units"
+            }
+          ],
+          "priority": 120,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "magic",
+          "value": 30,
+          "description": [
+            {
+              "type": "text",
+              "data": "Winds of Magic power reserve: 30"
+            }
+          ],
+          "priority": 15,
+          "icon_negative": "magic",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: 10 when fighting against Men"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_pro02_political_party_vampire_isabella": {
     "key": "wh_pro02_political_party_vampire_isabella",
@@ -5988,7 +11926,131 @@
           "data": "Spellcaster"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "blood_kiss",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Start with 1 Blood Kiss"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "blood_kiss",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "construction",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Access to unique building in Castle Drakenhof"
+            }
+          ],
+          "priority": 85,
+          "icon_negative": "construction",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "vampire",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Hero capacity: 3 for Vampires"
+            }
+          ],
+          "priority": 102,
+          "icon_negative": "vampire",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "weapon_damage",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Weapon damage: 25% for embedded Vampire "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 110,
+          "icon_negative": "weapon_damage",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "melee_character",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Undying Love: 15 to Melee Attack and Melee Defence when Vlad and Isabella are reinforcing each other"
+            }
+          ],
+          "priority": 87,
+          "icon_negative": "melee_character",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "melee",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: 10 for embedded Vampire "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "defence",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee defence: 10 for embedded Vampire "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes"
+            }
+          ],
+          "priority": 109,
+          "icon_negative": "defence",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   },
   "wh_pro02_political_party_vlad_ruler": {
     "key": "wh_pro02_political_party_vlad_ruler",
@@ -6065,6 +12127,90 @@
           "data": "Nagashism"
         }
       ]
-    ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "blood_kiss",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Start with 1 Blood Kiss"
+            }
+          ],
+          "priority": 3,
+          "icon_negative": "blood_kiss",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "construction",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Access to unique building in Castle Drakenhof"
+            }
+          ],
+          "priority": 85,
+          "icon_negative": "construction",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "campaign_movement",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign movement range: 10%"
+            }
+          ],
+          "priority": 100,
+          "icon_negative": "campaign_movement",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "attribute_can_siege",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Attribute: Siege Attacker"
+            }
+          ],
+          "priority": 1,
+          "icon_negative": "attribute_can_siege",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "melee_character",
+          "value": 15,
+          "description": [
+            {
+              "type": "text",
+              "data": "Undying Love: 15 to Melee Attack and Melee Defence when Vlad and Isabella are reinforcing each other"
+            }
+          ],
+          "priority": 87,
+          "icon_negative": "melee_character",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "attribute_guerrilla_deploy",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "All units in Vlad von Carstein's army receive Vanguard Deployment"
+            }
+          ],
+          "priority": 140,
+          "icon_negative": "attribute_guerrilla_deploy",
+          "is_positive_value_good": true
+        }
+      ]
+    }
   }
 }

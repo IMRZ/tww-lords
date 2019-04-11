@@ -2,7 +2,7 @@
 
 @each $flag in $flags {
 
-  .wh-icon.flag.#{$flag} {
+  .wh-icon.flags.#{$flag} {
     width: 64px;
     height: 64px;
     background-size: contain;

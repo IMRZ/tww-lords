@@ -46,8 +46,22 @@
                 <span v-else-if="selectedLord.difficulty === 'normal'" style="color: white;">Normal</span>
                 <span v-else-if="selectedLord.difficulty === 'easy'" style="color: white;">Easy</span>
               </div>
-              <WhIcon class="faction" :icon="`flag ${selectedLord.factionFlag}`" />
+              <WhIcon class="faction" :icon="`flags ${selectedLord.factionFlag}`" />
             </div>
+          </WhPanel>
+          <WhPanel title="Faction effects" style="padding: 10px;">
+            <AttributeFaction
+              v-for="(factionEffect, index) in selectedLord.faction_effects.faction_traits"
+              :key="index"
+              :factionEffect="factionEffect"
+            />
+          </WhPanel>
+          <WhPanel title="Lord effects" style="padding: 10px;">
+            <AttributeFaction
+              v-for="(factionEffect, index) in selectedLord.faction_effects.lord_traits"
+              :key="index"
+              :factionEffect="factionEffect"
+            />
           </WhPanel>
         </div>
       </WhPanel>
@@ -62,6 +76,8 @@ import WhTitle from "@/components/WhTitle";
 import WhPanel from "@/components/WhPanel";
 import WhIcon from "@/components/WhIcon";
 import GlobalTooltip from "@/components/GlobalTooltip";
+
+import AttributeFaction from "@/components/AttributeFaction";
 
 function compare(a, b) {
   if (a.military_group < b.military_group) return -1;
@@ -84,7 +100,9 @@ export default {
     WhTitle,
     WhPanel,
     WhIcon,
-    GlobalTooltip
+    GlobalTooltip,
+
+    AttributeFaction
   },
   data() {
     return {
@@ -101,6 +119,13 @@ export default {
   methods: {
     onClick(lord) {
       this.selectedLord = lord;
+    },
+    getFactionEffectStyles(factionEffect) {
+      const result = [];
+      if (factionEffect.value > 0 && factionEffect.is_positive_value_good === false) {
+        result.push("red");
+      }
+      return result;
     }
   }
 };
@@ -140,6 +165,10 @@ body {
 .quote {
   color: yellow;
   font-style: italic;
+}
+
+.red {
+  color: red;
 }
 
 .misc {
