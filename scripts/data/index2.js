@@ -68,7 +68,7 @@ function transformDescription(description) {
     .split("\\n\\n")
     .map((part) => {
       if (part.startsWith("&quot;")) {
-        return { type: "quote", text: part.replace(/&quot;/g, "") };
+        return { type: "quote", text: part.replace(/&quot;/g, "\"") };
       } else {
         return { type: "paragraph", text: part };
       }
@@ -83,15 +83,38 @@ function transformName(forename, surname) {
   }
 }
 
-function transformFactionsEffects(ui_tagged_images, faction_effect_groups, frontend_faction_effect_junctions, effects) {
+function transformFactionsEffects(ui_tagged_images, faction_effect_groups, frontend_faction_effect_junctions, effects, campaign_effect_scopes) {
   return faction_effect_groups.reduce((accumulator, effect_group) => {
     const group_effects = frontend_faction_effect_junctions.filter(entry => entry.group === effect_group.group_key);
 
     accumulator[effect_group.ui_section] = group_effects.map((group_effect) => {
       const effect = effects.find(entry => entry.effect === group_effect.effect);
+      const effect_scope = campaign_effect_scopes.find(entry => entry.key === group_effect.scope);
+
+      const scope = (!effect_scope.localised_text) ? [] : campaign_effect_scopes.find(entry => entry.key === group_effect.scope).localised_text
+        .replace(/\\n/g, "")
+        .split(/(\[\[.*?\[\[\/img\]\])/g)
+        .map((part) => {
+          if (part.startsWith("[[img:")) {
+            const [fullMatch, imageTag] = part.match(/^\[\[img:(.*)\]\]\[\[\/img]]$/);
+            const imagePath = ui_tagged_images.find(entry => entry.key === imageTag).image_path;
+            const [fullMatch2, category, icon] = imagePath.toLowerCase().match(/ui\/(?:.*)\/(.*)\/(.*).png/);
+
+            return {
+              type: "icon",
+              category: category,
+              data: icon
+            };
+          } else {
+            return {
+              type: "text",
+              data: part
+            };
+          }
+        });
 
       const description = effect.description
-        .replace(/(%\+n)|(%n)/, group_effect.value)
+        .replace(/(%\+n)|(%n)/, (Number(group_effect.value) > 0) ? `+${group_effect.value}` : group_effect.value)
         .replace(/%%/, "%") // workaround for hardcoded clan angrund effect
         .split(/(\[\[.*?\[\[\/img\]\])/g)
         .map((part) => {
@@ -130,15 +153,14 @@ function transformFactionsEffects(ui_tagged_images, faction_effect_groups, front
         });
 
       const result = {
-        icon: effect.icon.split(".")[0],
+        icon: effect.icon.split(".")[0].replace("/", " "),
         value: group_effect.value,
         description: description,
+        scope: scope,
         priority: effect.priority,
         icon_negative: effect.icon_negative.split(".")[0],
         is_positive_value_good: !!effect.is_positive_value_good
       };
-
-      console.log(effect.icon);
 
       return result;
     }).sort((a,b) => (a.priority > b.priority) ? 1 : ((b.priority > a.priority) ? -1 : 0));
@@ -147,11 +169,23 @@ function transformFactionsEffects(ui_tagged_images, faction_effect_groups, front
   }, {});
 }
 
+function transformLoadingScreenQuote(loadingScreenQuotesToUnit, loading_screen_quotes) {
+  if (loadingScreenQuotesToUnit.length > 1) {
+    const quoteJunction = loadingScreenQuotesToUnit.find(entry => entry.quote.endsWith("unit") === false);
+    const loadingScreenQuote = loading_screen_quotes.find(entry => entry.key === quoteJunction.quote);
+    return loadingScreenQuote.description;
+  } else {
+    const loadingScreenQuote = loading_screen_quotes.find(entry => entry.key === loadingScreenQuotesToUnit[0].quote);
+    return loadingScreenQuote.description;
+  }
+}
+
 function extract() {
   const pathToWh2Dir = getPathToWh2Dir();
 
   const xmlData = {
     agent_subtypes: "assembly_kit/raw_data/db/agent_subtypes.xml",
+    campaign_effect_scopes: "assembly_kit/raw_data/db/campaign_effect_scopes.xml",
     cultures_subcultures: "assembly_kit/raw_data/db/cultures_subcultures.xml",
     effects: "assembly_kit/raw_data/db/effects.xml",
     factions: "assembly_kit/raw_data/db/factions.xml",
@@ -174,6 +208,7 @@ function extract() {
 
   const [
     agent_subtypes,
+    campaign_effect_scopes,
     cultures_subcultures,
     effects,
     factions,
@@ -197,8 +232,7 @@ function extract() {
     const startPosFaction = start_pos_factions.find(entry => entry.ID === startPosCharacter.faction);
     const faction = factions.find(entry => entry.key === startPosFaction.faction);
     const frontendFaction = frontend_factions.find(entry => entry.faction === faction.key);
-    const loadingScreenQuotesToUnit = loading_screen_quotes_to_units.find(entry => entry.unit === agentSubType.associated_unit_override);
-    const loadingScreenQuote = loading_screen_quotes.find(entry => entry.key === loadingScreenQuotesToUnit.quote);
+    const loadingScreenQuotesToUnit = loading_screen_quotes_to_units.filter(entry => entry.unit === agentSubType.associated_unit_override);
     const forename = names.find(entry => entry.id === startPosCharacter.Name);
     const surname = names.find(entry => entry.id === startPosCharacter.Surname);
     const cultureSubculture = cultures_subcultures.find(entry => entry.subculture === faction.subculture);
@@ -209,19 +243,16 @@ function extract() {
       difficulty: frontendFactionLeader.difficulty,
       character_image: frontendFactionLeader.character_image.match(/^.*\\(.*).png$/)[1].toLowerCase(),
       localised_description: transformDescription(frontendFactionLeader.localised_description),
-      // description: startPosFaction.description, // PLACEHOLDER?
-      // long_description: startPosFaction.long_description, // PLACEHOLDER?
       faction: faction.key,
       factionFlag: faction.flags_path.toLowerCase().match(/^ui\\flags\\(.*)$/)[1],
       military_group: faction.military_group,
       subculture_name: cultureSubculture.name,
       screen_name: faction.screen_name,
       character_name: transformName(forename, surname),
-      // localised_playstyle: frontendFaction.localised_playstyle, // EMPTY?
-      quote: loadingScreenQuote.description,
+      quote: transformLoadingScreenQuote(loadingScreenQuotesToUnit, loading_screen_quotes),
       localised_mechanics: transformFactionBulletpoints(ui_tagged_images, frontendFaction.localised_mechanics),
-      bulletpoints: transformBulletpoints(loadingScreenQuote.bulletpoints),
-      faction_effects: transformFactionsEffects(ui_tagged_images, frontendFactionEffectGroups, frontend_faction_effect_junctions, effects),
+      // bulletpoints: transformBulletpoints(loadingScreenQuote.bulletpoints),
+      faction_effects: transformFactionsEffects(ui_tagged_images, frontendFactionEffectGroups, frontend_faction_effect_junctions, effects, campaign_effect_scopes),
     };
 
     return accumulator;

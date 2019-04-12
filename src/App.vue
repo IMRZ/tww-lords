@@ -2,19 +2,10 @@
   <div class="app" v-on="eventListeners">
     <GlobalTooltip :mouseEvent="mouseEvent" />
     <div class="outer">
-      <WhPanel class="outer-panel" :title="selectedLord.subculture_name">
-        <div class="outer-panel-content">
-          <WhPanel>
-            <div class="placeholder">PLACEHOLDER</div>
-          </WhPanel>
-          <WhPanel title="Race Attributes">
-            <div class="faction-mechanics">
-              <div class="faction-bullet" v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
-                <WhIcon class="faction-bullet-icon" :icon="`${icon.category} ${icon.data}`" />
-                <span class="faction-bullet-text">{{text.data}}</span>
-              </div>
-            </div>
-          </WhPanel>
+      <WhPanel class="outer-panel" :title="selectedLord.character_name">
+        <div class="outer-panel-content" style="padding: 20px;">
+          <!-- {{selectedLord.quote}} -->
+          <p v-for="(part, index) in selectedLord.localised_description" :key="index" :class="{ quote: part.type === 'quote' }">{{part.text}}</p>
         </div>
       </WhPanel>
     </div>
@@ -29,10 +20,6 @@
           @click.native="onClick(lord)"
         />
       </div>
-      <WhPanel style="width: 850px; margin-top: 30px;" :subtitle="selectedLord.character_name">
-        <!-- selectedLord.localised_description -->
-        <div class="placeholder">PLACEHOLDER</div>
-      </WhPanel>
     </div>
     <div class="outer">
       <WhPanel class="outer-panel" :title="selectedLord.screen_name">
@@ -47,21 +34,32 @@
                 <span v-else-if="selectedLord.difficulty === 'easy'" style="color: white;">Easy</span>
               </div>
               <WhIcon class="faction" :icon="`flags ${selectedLord.factionFlag}`" />
+              <div style="width: 100%; font-size: 1.25em;"><span>Faction effects</span></div>
+              <div style="width: 100%;">
+                <AttributeFaction
+                  v-for="(factionEffect, index) in selectedLord.faction_effects.faction_traits"
+                  :key="index"
+                  :factionEffect="factionEffect"
+                />
+              </div>
+              <div style="width: 100%; font-size: 1.25em;"><span>Lord effects</span></div>
+              <div style="width: 100%;">
+                <AttributeFaction
+                  v-for="(factionEffect, index) in selectedLord.faction_effects.lord_traits"
+                  :key="index"
+                  :factionEffect="factionEffect"
+                />
+              </div>
             </div>
           </WhPanel>
-          <WhPanel title="Faction effects" style="padding: 10px;">
-            <AttributeFaction
-              v-for="(factionEffect, index) in selectedLord.faction_effects.faction_traits"
-              :key="index"
-              :factionEffect="factionEffect"
-            />
-          </WhPanel>
-          <WhPanel title="Lord effects" style="padding: 10px;">
-            <AttributeFaction
-              v-for="(factionEffect, index) in selectedLord.faction_effects.lord_traits"
-              :key="index"
-              :factionEffect="factionEffect"
-            />
+          <WhPanel :title="selectedLord.subculture_name">
+            <div class="faction-mechanics">
+              <div style="width: 100%; font-size: 1.25em; color: white; margin: 10px 0 0 10px;">Race Attributes</div>
+              <div style="font-size: 1.04em;" class="faction-bullet" v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
+                <WhIcon class="faction-bullet-icon" :icon="`${icon.category} ${icon.data}`" />
+                <span class="faction-bullet-text">{{text.data}}</span>
+              </div>
+            </div>
           </WhPanel>
         </div>
       </WhPanel>

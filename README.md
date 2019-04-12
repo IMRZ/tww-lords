@@ -1,5 +1,8 @@
 # tww-lords
 
+# out of memory fix
+`cross-env NODE_OPTIONS=--max-old-space-size=8192 vue-cli-service build`
+
 ## Project setup
 ```
 npm install

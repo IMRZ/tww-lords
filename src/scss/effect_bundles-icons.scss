@@ -1,0 +1,112 @@
+
+$effect_bundles:
+  "admiral"
+  "agent"
+  "amber_bundle"
+  "ammo"
+  "archer"
+  "armour"
+  "army"
+  "army_morale"
+  "attribute_can_siege"
+  "attribute_causes_fear"
+  "attribute_guerrilla_deploy"
+  "battle_movement"
+  "blood_kiss"
+  "campaign_movement"
+  "canopic_jars"
+  "charge"
+  "chivalry_positive"
+  "construction"
+  "death_hag"
+  "defence"
+  "diplomacy"
+  "disaster"
+  "dlc10_assassination_targets"
+  "dlc10_blood_voyage"
+  "dlc10_death_night"
+  "dlc10_defender_of_ulthuan"
+  "dlc10_mortal_torment"
+  "dlc10_power_of_nature"
+  "effect_rite"
+  "experience"
+  "fractured_mind"
+  "general_ability"
+  "god_effect_grungni"
+  "growth"
+  "icon_effects_ambush"
+  "income"
+  "item_ability"
+  "loyalty"
+  "magic"
+  "magic_character"
+  "magical_attacks"
+  "melee"
+  "melee_character"
+  "military"
+  "military_spending"
+  "morale"
+  "morale_character"
+  "peasant"
+  "phase_posion"
+  "public_order"
+  "ranged_damage"
+  "religion"
+  "religion_chaos"
+  "religion_skaven"
+  "religion_undeath"
+  "replenishment"
+  "resistance_magic"
+  "resistance_missile"
+  "resistance_physical"
+  "resistance_ward_save"
+  "slann_mage_priest"
+  "spell_ability"
+  "subterfuge"
+  "subterranean"
+  "technology"
+  "trait_climate_frozen"
+  "trait_climate_jungle"
+  "trait_climate_mountain"
+  "trait_climate_savannah"
+  "trait_climate_wasteland"
+  "treasure_map"
+  "treasury"
+  "turns"
+  "vampire"
+  "warrior_priest"
+  "weapon_damage"
+  "weapon_damage_character"
+  "wh2_dlc10_hef_handmaiden"
+  "wizard"
+  "wound_time";
+
+@each $ef in $effect_bundles {
+  .wh-icon.effect_bundles.#{$ef} {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-image: url("~@/assets/effect_bundles/#{$ef}.png");
+  }
+}
+
+.wh-icon.effect_bundles.wh_main_chs_chaos.military_spending {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-image: url("~@/assets/effect_bundles/wh_main_chs_chaos/military_spending.png");
+}
+
+.wh-icon.effect_bundles.wh_main_vmp_vampire_counts.military_spending {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-image: url("~@/assets/effect_bundles/wh_main_vmp_vampire_counts/military_spending.png");
+}
+
+.wh-icon.effect_bundles.wh_main_vmp_vampire_counts.variable_upkeep {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-image: url("~@/assets/effect_bundles/wh_main_vmp_vampire_counts/variable_upkeep.png");
+}
