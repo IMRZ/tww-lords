@@ -2,15 +2,24 @@
   <div class="app" v-on="eventListeners">
     <GlobalTooltip :mouseEvent="mouseEvent" />
     <div class="outer">
-      <WhPanel class="outer-panel" :title="selectedLord.character_name">
-        <div class="outer-panel-content" style="padding: 20px;">
-          <!-- {{selectedLord.quote}} -->
-          <p v-for="(part, index) in selectedLord.localised_description" :key="index" :class="{ quote: part.type === 'quote' }">{{part.text}}</p>
+      <WhPanel class="panel-character" :title="{ text: selectedLord.character_name }">
+        <div class="panel-character-content">
+          <div class="panel-character-content-scroll-wrapper">
+            <p
+              v-for="(part, index) in selectedLord.localised_description"
+              :key="index"
+              :class="{ quote: part.type === 'quote' }"
+            >
+              {{part.text}}
+            </p>
+          </div>
         </div>
       </WhPanel>
     </div>
     <div class="center">
-      <WhTitle class="large">Select Lord</WhTitle>
+      <div class="center-controls">
+        <WhTitle class="large">Select Lord</WhTitle>
+      </div>
       <div class="container">
         <WhFrameLord
           :class="{ selected: (lord === selectedLord), defaults: true }"
@@ -22,37 +31,39 @@
       </div>
     </div>
     <div class="outer">
-      <WhPanel class="outer-panel" :title="selectedLord.screen_name">
-        <div class="outer-panel-content">
-          <WhPanel>
-            <div class="misc">
-              <div class="challenge">
-                <span style="opacity: 0.5;">Initial challenge: </span>
-                <span v-if="selectedLord.difficulty === 'very_hard'" style="color: red;">Very Hard</span>
-                <span v-else-if="selectedLord.difficulty === 'hard'" style="color: red;">Hard</span>
-                <span v-else-if="selectedLord.difficulty === 'normal'" style="color: white;">Normal</span>
-                <span v-else-if="selectedLord.difficulty === 'easy'" style="color: white;">Easy</span>
-              </div>
-              <WhIcon class="faction" :icon="`flags ${selectedLord.factionFlag}`" />
-              <div style="width: 100%; font-size: 1.25em;"><span>Faction effects</span></div>
-              <div style="width: 100%;">
-                <AttributeFaction
-                  v-for="(factionEffect, index) in selectedLord.faction_effects.faction_traits"
-                  :key="index"
-                  :factionEffect="factionEffect"
-                />
-              </div>
-              <div style="width: 100%; font-size: 1.25em;"><span>Lord effects</span></div>
-              <div style="width: 100%;">
-                <AttributeFaction
-                  v-for="(factionEffect, index) in selectedLord.faction_effects.lord_traits"
-                  :key="index"
-                  :factionEffect="factionEffect"
-                />
+      <WhPanel :title="{ text: selectedLord.screen_name }" class="panel-faction">
+        <div class="panel-faction-content">
+          <WhPanel style="overflow: hidden; padding: 16px 8px;">
+            <div style="height: 100%; overflow: auto;">
+              <div class="misc">
+                <div class="challenge">
+                  <span style="opacity: 0.5;">Initial challenge: </span>
+                  <span v-if="selectedLord.difficulty === 'very_hard'" style="color: red;">Very Hard</span>
+                  <span v-else-if="selectedLord.difficulty === 'hard'" style="color: red;">Hard</span>
+                  <span v-else-if="selectedLord.difficulty === 'normal'" style="color: white;">Normal</span>
+                  <span v-else-if="selectedLord.difficulty === 'easy'" style="color: white;">Easy</span>
+                </div>
+                <WhIcon class="faction" :icon="`flags ${selectedLord.factionFlag}`" />
+                <div style="width: 100%; font-size: 1.25em;"><span>Faction effects</span></div>
+                <div style="width: 100%;">
+                  <AttributeFaction
+                    v-for="(factionEffect, index) in selectedLord.faction_effects.faction_traits"
+                    :key="index"
+                    :factionEffect="factionEffect"
+                  />
+                </div>
+                <div style="width: 100%; font-size: 1.25em;"><span>Lord effects</span></div>
+                <div style="width: 100%;">
+                  <AttributeFaction
+                    v-for="(factionEffect, index) in selectedLord.faction_effects.lord_traits"
+                    :key="index"
+                    :factionEffect="factionEffect"
+                  />
+                </div>
               </div>
             </div>
           </WhPanel>
-          <WhPanel :title="selectedLord.subculture_name">
+           <WhPanel :title="{ text: selectedLord.subculture_name }" style="flex: 0 1;">
             <div class="faction-mechanics">
               <div style="width: 100%; font-size: 1.25em; color: white; margin: 10px 0 0 10px;">Race Attributes</div>
               <div style="font-size: 1.04em;" class="faction-bullet" v-for="([icon, text], index) in selectedLord.localised_mechanics" :key="index">
@@ -106,7 +117,6 @@ export default {
     return {
       lords: campaign.mortal,
       selectedCampaign: "mortal",
-      selectedLord: campaign.mortal[0],
       mouseEvent: null,
       eventListeners: {
         mousemove: (mouseEvent) => this.mouseEvent = mouseEvent,
@@ -125,16 +135,42 @@ export default {
       }
       return result;
     }
+  },
+  computed: {
+    selectedLord: {
+      get() {
+        const key = this.$store.state.route.query.lord;
+
+        if (key) {
+          return this.lords.find(lord => lord.key === key) || this.lords[0];
+        } else {
+          this.$router.replace({
+            query: {
+              lord: this.lords[0].key
+            }
+          });
+          return this.lords[0];
+        }
+      },
+      set(lord) {
+        this.$router.replace({
+          query: {
+            lord: lord.key
+          }
+        });
+      }
+    }
   }
 };
 </script>
 
 <style lang="scss">
-@import "~@/scss/lord-portraits.scss";
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer');
 
 html {
   box-sizing: border-box;
   height: 100%;
+  font-family: 'IM Fell Great Primer', serif;
 }
 
 *,
@@ -147,7 +183,8 @@ body {
   margin: 0;
   height: 100%;
 
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url("~@/assets/battle_land_1.png");
 
   overflow: hidden;
@@ -158,15 +195,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.quote {
-  color: yellow;
-  font-style: italic;
-}
-
-.red {
-  color: red;
 }
 
 .misc {
@@ -215,7 +243,7 @@ body {
   width: 25%;
   height: 100%;
   color: white;
-  padding: 70px 20px;
+  padding: 100px 20px;
   overflow: hidden;
 
   .outer-panel {
@@ -227,7 +255,38 @@ body {
     max-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
+}
+
+.panel-character {
+  height: 100%;
+  font-size: 1.05em;
+}
+
+.panel-character-content {
+  height: 100%;
+  padding: 32px 16px;
+  overflow: hidden;
+}
+
+.panel-character-content-scroll-wrapper {
+  height: 100%;
+  overflow: auto;
+}
+
+.panel-faction {
+  height: 100%;
+}
+
+.panel-faction-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 8px;
+  overflow: hidden;
 }
 
 .center {
@@ -237,6 +296,10 @@ body {
   padding: 0 20px;
   height: 100%;
   width: 50%;
+}
+
+.center-controls {
+  height: 200px;
 }
 
 .container {

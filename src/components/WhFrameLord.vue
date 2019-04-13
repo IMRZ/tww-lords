@@ -1,5 +1,5 @@
 <template>
-  <div class="wh-frame-lord" v-tooltip="lord.quote">
+  <div class="wh-frame-lord" v-tooltip="lord">
     <div class="frame"></div>
     <div :class="`portrait lord ${lord.character_image}`"></div>
   </div>

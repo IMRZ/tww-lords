@@ -1,8 +1,6 @@
 <template>
   <div class="wh-title">
-    <div class="content">
-      <slot></slot>
-    </div>
+    <slot></slot>
   </div>
 </template>
 

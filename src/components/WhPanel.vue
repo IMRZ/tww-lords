@@ -1,11 +1,9 @@
 <template>
   <div class="wh-panel">
-    <div v-if="showTitle" :class="titleClass">
-      <WhTitle :class="{ sub: subtitle }">{{title ? title : subtitle}}</WhTitle>
+    <div v-if="title" class="title">
+      <WhTitle :class="title.type" :style="titleStyle">{{title.text}}</WhTitle>
     </div>
-    <div class="content">
-      <slot></slot>
-    </div>
+    <slot></slot>
   </div>
 </template>
 
@@ -15,20 +13,14 @@ import WhTitle from "@/components/WhTitle";
 export default {
   components: { WhTitle },
   props: {
-    title: String,
-    subtitle: String
+    title: Object
   },
   computed: {
-    showTitle() {
-      return (this.title || this.subtitle);
-    },
-    titleClass() {
-      if (this.title) {
-        return "title";
-      } else if (this.subtitle) {
-        return "sub title";
+    titleStyle() {
+      if (this.title.text && this.title.text.length > 20) {
+        return "font-size: 1.1em;"
       } else {
-        return [];
+        return null;
       }
     }
   }
@@ -39,7 +31,6 @@ export default {
 <style lang="scss" scoped>
 .wh-panel {
   position: relative;
-  padding: 8px 8px;
   color: white;
   $slice: 60;
   border-image-slice: $slice $slice $slice $slice fill;
@@ -48,12 +39,15 @@ export default {
   border-image-source: url("~@/assets/panel_back_frame.png");
   background-image: url("~@/assets/panel_back_tile.png");
   background-clip: content-box;
+  height: 100%;
+  padding: 0 8px;
+  z-index: 5;
 }
 
 .wh-panel .wh-panel {
   border-image-source: url("~@/assets/panel_back_inner_frame.png");
   background-image: none;
-  padding: 0 8px;
+  margin: 8px 0;
 }
 
 .wh-panel .wh-panel:not(:first-child) {
@@ -72,14 +66,5 @@ export default {
 
 .wh-panel .wh-panel .title {
   top: -40px;
-}
-
-.content {
-  height: 100%;
-  padding: 5px 0;
-}
-
-.title + .content {
-  z-index: 5;
 }
 </style>
