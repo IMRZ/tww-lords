@@ -20,6 +20,9 @@
       <div class="center-controls">
         <WhTitle class="large">Select Lord</WhTitle>
       </div>
+      <div style="margin: 20px;">
+        <button @click="random" :disabled="isRandomButtonDisabled">Select random</button>
+      </div>
       <div class="container">
         <WhFrameLord
           :class="{ selected: (lord === selectedLord), defaults: true }"
@@ -121,7 +124,8 @@ export default {
       eventListeners: {
         mousemove: (mouseEvent) => this.mouseEvent = mouseEvent,
         mouseleave: () => this.mouseEvent = null
-      }
+      },
+      isRandomButtonDisabled: false,
     };
   },
   methods: {
@@ -134,6 +138,21 @@ export default {
         result.push("red");
       }
       return result;
+    },
+    async random() {
+      this.isRandomButtonDisabled = true;
+      const randomPath = this.lords
+        .map(() => (Math.random() * this.lords.length) | 0);
+
+      for (let i = 0; i < this.lords.length; i++) {
+        await new Promise((resolve) => {
+          setTimeout(() => {
+            this.selectedLord = this.lords[randomPath[i]];
+            resolve();
+          }, i * 3);
+        });
+      }
+      this.isRandomButtonDisabled = false;
     }
   },
   computed: {
@@ -299,7 +318,7 @@ body {
 }
 
 .center-controls {
-  height: 200px;
+  height: 150px;
 }
 
 .container {
