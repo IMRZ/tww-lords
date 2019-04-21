@@ -37,7 +37,7 @@
         },
         {
           "type": "text",
-          "data": "Skaven Underworld: Settlements appear to be ruins and must be scouted to reveal any Skaven presence."
+          "data": "Skaven Under-Empire: Establish warrens in any settlement, undermining your enemies progress, or hide in plain sight while growing your own empire."
         }
       ],
       [
@@ -978,7 +978,7 @@
         },
         {
           "type": "text",
-          "data": "Skaven Underworld: Settlements appear to be ruins and must be scouted to reveal any Skaven presence."
+          "data": "Skaven Under-Empire: Establish warrens in any settlement, undermining your enemies progress, or hide in plain sight while growing your own empire."
         }
       ],
       [
@@ -1976,7 +1976,7 @@
           "description": [
             {
               "type": "text",
-              "data": "Death Night spawns an allied Blood Voyage army"
+              "data": "Death Night summons an allied Blood Voyage army"
             }
           ],
           "scope": [],
@@ -2024,6 +2024,20 @@
           "scope": [],
           "priority": 15,
           "icon_negative": "military",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Sacrifice to Drakira: Improves Death Hags and Witch Elves, plus bonuses for all armies versus High Elves"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
           "is_positive_value_good": true
         }
       ],
@@ -2165,6 +2179,20 @@
           "scope": [],
           "priority": 6,
           "icon_negative": "wh2_dlc10_hef_handmaiden",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Invocation of Lileath: Improves Sisters of Avelorn, Dryads, and Handmaidens"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
           "is_positive_value_good": true
         },
         {
@@ -2330,6 +2358,29 @@
           "scope": [],
           "priority": 2,
           "icon_negative": "dlc10_assassination_targets",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Invocation of Morai-Heg: Summons unique "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Hero Hand of the Shadow Crown"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
           "is_positive_value_good": true
         },
         {
@@ -2521,7 +2572,7 @@
           "description": [
             {
               "type": "text",
-              "data": "Death Night spawns an allied Blood Voyage army"
+              "data": "Death Night summons an allied Blood Voyage army"
             }
           ],
           "scope": [],
@@ -2569,6 +2620,20 @@
           "scope": [],
           "priority": 15,
           "icon_negative": "military",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Sacrifice to Drakira: Improves Death Hags and Witch Elves, plus bonuses for all armies versus High Elves"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
           "is_positive_value_good": true
         }
       ],
@@ -2710,6 +2775,20 @@
           "scope": [],
           "priority": 6,
           "icon_negative": "wh2_dlc10_hef_handmaiden",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Invocation of Lileath: Improves Sisters of Avelorn, Dryads, and Handmaidens"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
           "is_positive_value_good": true
         },
         {
@@ -2875,6 +2954,29 @@
           "scope": [],
           "priority": 2,
           "icon_negative": "dlc10_assassination_targets",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Invocation of Morai-Heg: Summons unique "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Hero Hand of the Shadow Crown"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
           "is_positive_value_good": true
         },
         {
@@ -3594,6 +3696,20 @@
           "scope": [],
           "priority": 1,
           "icon_negative": "trait_climate_savannah",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Sacrifice to Anath Raema: Improves Corsairs and Kharibdyss units"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
           "is_positive_value_good": true
         },
         {
@@ -4481,6 +4597,20 @@
           "is_positive_value_good": true
         },
         {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Sacrifice to Anath Raema: Improves Corsairs and Kharibdyss units"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": true
+        },
+        {
           "icon": "income",
           "value": 50,
           "description": [
@@ -4734,6 +4864,1158 @@
           ],
           "priority": 104,
           "icon_negative": "religion_undeath",
+          "is_positive_value_good": true
+        }
+      ]
+    }
+  },
+  "wh2_dlc12_political_party_lzd_tehenhauin": {
+    "key": "wh2_dlc12_political_party_lzd_tehenhauin",
+    "difficulty": "very_hard",
+    "character_image": "wh2_dlc12_lzd_tehenhauin",
+    "localised_description": [
+      {
+        "type": "quote",
+        "text": "\"The time of the Great Serpent is nigh!\""
+      },
+      {
+        "type": "paragraph",
+        "text": "One of the most significant events in the history of the Lizardmen was the rise of the Skink cult of the Serpent-God, Sotek. Traditionally, the gods of the Lizardmen were, and still are, the Old Ones, said to have come to the world in its primeval era from beyond the stars: such shadowy entities as Tlaxcotl, Chotec, Quatl, Tzunki, Xapati, Huanchi and the inscrutable Tepok, whose decree was for the world to have a central place in their unknowable plans. Sotek was a new god, an upstart god, the 'God of the Skinks', whose fateful prophecy was an obscure cautionary detail known only from a single plaque once kept in the great pyramid-temple of Chaqua, the City of Gold."
+      },
+      {
+        "type": "paragraph",
+        "text": "The former Mage-Priests of Chaqua had believed the Plaque of Sotek contained the true words of the Old Ones, but tragically did not ponder on them, assuming they spoke of events in the very distant future. Little did they know that Sotek’s prophecy not only predicted the collapse of the Warp gates, but also an imminent cataclysmic invasion of Lustria by the Skaven, starting with a deadly plague sweeping over the land. And so, when a virulent sickness arrived in Chaqua and decimated the population, it was already far too late. Soon, the unprepared Mage-Priests of the temple-city were also overcome by the sickness and perished. With the spawning pools infected and countless Skinks sick or dead, the events prophesized by the Plaque of Sotek had begun. Doom had befallen the City of Gold…"
+      },
+      {
+        "type": "paragraph",
+        "text": "The remaining population of Chaqua were now leaderless, but the few survivors were of the particularly resilient generation of Skinks known as the ‘Red Crests’. The greatest amongst them was an individual with a zeal for slaughtering Skaven very rarely seen in the dispassionate Lizardmen’s ranks – Tehenhauin, the Prophet of Sotek. As his following grew, the Cult of Sotek quickly became the focal point of the Lizardmen’s counter-offensive against the ratmen’s virulent invasion. For Sotek himself is prophesised to be a mighty serpent of such awesome size and appetite that he can swallow the Rat God himself and spend thousands of years digesting him!"
+      },
+      {
+        "type": "paragraph",
+        "text": "Having led the remaining cohorts of Chaqua on a migration ahead of the plague, Tehenhauin triumphantly grasps the Plaque of Sotek as he leads his apostles against Skaven armies wherever he finds them. It seems impossible for a short-lived Skink to attain his lifespan, but it is whispered that as a snake sheds its skin and is renewed, so too does Sotek’s Chosen. The prophecy states that the Serpent-God’s coming shall be heralded by the appearance of his forked tongue in the sky, but also that his invocation can only be made possible by sating his near-boundless appetite for sacrificial offerings. Tehenhauin will not rest until the waters of the River Amaxon run red with sacrificed Skaven blood, empowering Sotek to deliver Lustria from the rodent-spawn once and for all!"
+      }
+    ],
+    "faction": "wh2_dlc12_lzd_cult_of_sotek",
+    "factionFlag": "wh2_dlc12_lzd_cult_of_sotek",
+    "military_group": "wh2_main_lzd",
+    "subculture_name": "Lizardmen",
+    "screen_name": "Cult of Sotek",
+    "character_name": "Tehenhauin",
+    "quote": "The Prophet seeks to deliver Lustria from its beleaguerment by way of the only tribute acceptable to Sotek – prodigious sacrifice!",
+    "localised_mechanics": [
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_geomantic_web"
+        },
+        {
+          "type": "text",
+          "data": "Geomantic Web: settlements are linked by a network which boosts the power of commandments."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_spawning"
+        },
+        {
+          "type": "text",
+          "data": "Special Spawnings: Periodic missions allow access to powerful Blessed variants of certain units."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_beasts"
+        },
+        {
+          "type": "text",
+          "data": "Beasts suitable for every task, though some are so ferocious they may lose control and charge ahead."
+        }
+      ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "military_spending",
+          "value": 200,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: +200% for Saurus Infantry and Temple Guard units until completing Stage 1 of the Prophecy of Sotek"
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "dlc12_sotek_sacrifice_captives",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Sacrificial offerings gained from winning battles can be offered to Sotek to receive a variety of powerful rewards."
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "dlc12_sotek_sacrifice_captives",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": -75,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite cost: -75% for Rite of Sotek"
+            }
+          ],
+          "scope": [],
+          "priority": 106,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "resistance_physical",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Physical resistance: +10% for Skinks units"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 55,
+          "icon_negative": "resistance_physical",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: +10 when fighting against Skaven"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "religion",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Untainted: +3"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "(local province)"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion",
+          "is_positive_value_good": true
+        }
+      ]
+    }
+  },
+  "wh2_dlc12_political_party_lzd_tiktaqto": {
+    "key": "wh2_dlc12_political_party_lzd_tiktaqto",
+    "difficulty": "normal",
+    "character_image": "wh2_dlc12_lzd_tiktaqto",
+    "localised_description": [
+      {
+        "type": "quote",
+        "text": "\"Flying braves, bring wrath from the sky!!\""
+      },
+      {
+        "type": "paragraph",
+        "text": "Dwelling in the warmer, jungle climes in the southern regions of the world are the ancient societies of the Lizardmen. Often mistook as a single race, these reptilian guardians of Order are composed of several distinct species serving under the enigmatic Slann Mage-Priests. Of all Lizardmen species, the Skinks are the most mentally and physically agile, and on occasion a Skink spawning will not produce an entire cohort from the pools of life as is the norm, but instead only a single Skink will issue forth. These individuals are considered marked by the Old Ones as destined to lead, or otherwise achieve greatness amongst their kind. When such individuals emerge, the Slann Mage-Priests of Lustria make use of them in the Lizardmen chain of command to help achieve their indecipherable ends."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tiktaq’to is one such special individual – a cagey but death-defying Skink Chief who has proven himself peerless when it comes to aerial combat and leading bold hit-and-run attacks from the sky. From his outpost in Tlaqua he patrols the Southlands, leading a squadron of flying reptiles, from atop his Terradon, Zwup, through reckless paths of dense vegetation and steep-sided ravines so narrow that the flying beasts brush against the cliff-faces with each flap of their mighty wings. A keen sense of when and where to strike has led Tiktaq’to to countless victories against forces many times the size of his own. His foes always attempt to shoot him and his squadron out of the air as soon as they come within range – a feat easier said than done, since he leads his formations in such breath-taking aerial manoeuvres that they can evade clouds of arrows and emerge unscathed to deliver their own lethal attacks. For his many acts of fearless flying and savage attacks on the Lizardmen’s foes, Tiktaq’to has been named ‘Master of Skies’, a pre-eminent position that has also granted him ownership of the Mask of Heavens – a thrice-blessed heirloom from an elder age, which allows the wearer to meld their consciousness with the minds of the mighty Terradons."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tiktaq’to has been sent from Lustria in aid of the Great Plan, leading his squadron across the World Pond to the Southlands – a place of considerable significance to the Lizardmen as it was once a single landmass that included their home continent of Lustria, before Slann manipulation many ages ago divided it in two. As those who have braved both places will attest, this is why the jungles of the Southlands bear so much in common with those of Lustria, both being home to the same reptilian carnivores as well as long-forgotten temple-cities that have fallen off the newly-altered Geomantic Web. With new aeries now established in the ancient ruins of the previously abandoned temple-city of Tlaqua, the Lizardmen’s ancient holdings in the Southlands shall be forsaken no longer. It is the Master of the Skies’ duty to reclaim them, uphold the will of the Old Ones, and destroy all those discordant with the Great Plan!"
+      }
+    ],
+    "faction": "wh2_main_lzd_tlaqua",
+    "factionFlag": "wh2_main_lzd_tlaqua",
+    "military_group": "wh2_main_lzd",
+    "subculture_name": "Lizardmen",
+    "screen_name": "Tlaqua",
+    "character_name": "Tiktaq'to",
+    "quote": "The foremost airborne defender of the temple-cities is peerless in his vigilance and daring, timing aerial assaults to deadly perfection.",
+    "localised_mechanics": [
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_geomantic_web"
+        },
+        {
+          "type": "text",
+          "data": "Geomantic Web: settlements are linked by a network which boosts the power of commandments."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_spawning"
+        },
+        {
+          "type": "text",
+          "data": "Special Spawnings: Periodic missions allow access to powerful Blessed variants of certain units."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_beasts"
+        },
+        {
+          "type": "text",
+          "data": "Beasts suitable for every task, though some are so ferocious they may lose control and charge ahead."
+        }
+      ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "agent",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Skink "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes start with a Terradon mount"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "agent",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite of Tzunki: Resets the campaign movement range of all armies and characters when performed"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "agent",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign line of sight: +25%"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "(all characters)"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "agent",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "general_ability",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Terradons gain a unique battle ability"
+            }
+          ],
+          "scope": [],
+          "priority": 600,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Terradon Riders and Ripperdactyl Riders units"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "melee",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: +10 when in foreign territory"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 411,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        }
+      ]
+    }
+  },
+  "wh2_dlc12_political_party_skv_ikit_claw": {
+    "key": "wh2_dlc12_political_party_skv_ikit_claw",
+    "difficulty": "hard",
+    "character_image": "wh2_dlc12_skv_ikit_claw",
+    "localised_description": [
+      {
+        "type": "quote",
+        "text": "\"To create, one must-must destroy! To destroy, one must-must create!\""
+      },
+      {
+        "type": "paragraph",
+        "text": "The black parody of mankind that are the Skaven ultimately embody everything that is wrong with humanity, only more so. Emerging from their subterranean lairs to unleash vicious and inhuman war, they are a nightmare vision – a ravenous horde, a chaotic and rolling tide of verminous ratmen in unimaginably vast numbers."
+      },
+      {
+        "type": "paragraph",
+        "text": "Of all the despicable Skaven clans that torment the world from the sprawling Under-Empire lurking beneath, Clan Skryre are arguably the most influential, and certainly the most feared. This is due to the deranged creations of the clan’s Warlock Engineers, who specialise in an insane blending of magic and arcane technology to produce untold weaponry in their Warpforges beneath their capital, Skavenblight. They are both inventors and sorcerers in their own right, manufacturing and wielding infernal devices capable of fiendish destruction, while also manipulating the Winds of Magic to cast spells and intertwine enchantments into mechanical form. By selling their weird arsenal of devastation to the other clans as quickly as slaves can churn them off the assembly lines, Clan Skryre has grown wealthy and powerful. None dare offend them for fear of ending up at the wrong end of any number of weapons that could melt, blast, desiccate, or otherwise cause a grievous death."
+      },
+      {
+        "type": "paragraph",
+        "text": "With depravity and intelligence in equal abundance, Ikit Claw has taken Skryre’s blend of science and sorcery to entirely new levels. The most infamous and dreaded of all Warlock Engineers, his experiments have resulted in entire legions of Skavenslaves being blasted to bits – a small price for the sheer power and killing might that he has added to Skryre’s deadly arsenal. In his bloodthirsty quest for destructive knowledge, Ikit has travelled the world, stealing secrets from the mystics of Cathay, studying the dimension-spanning machines of Lustria, and toiling for years alongside the cruel Forgemasters of far off Zharr-Naggrund."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ikit was tall and white-furred before a failed experiment exploded and mangled his body, so an intricate iron mask of his own invention now covers his hairless skull and a cunningly wrought exoskeleton aids his withered left side. The iron contraption is run by a Warp-generator, a masterpiece of engineering that siphons the Winds of Magic to also power Ikit’s devilish inventions. Whirring cogs hiss and vent steam as the Chief Warlock moves, clanking like a fully armoured knight. Like all Clan Skryre Warlock Engineers, Ikit has continued to tinker, adding countless upgrades. He wields the crackling blade known as ‘Storm Daemon’, a modified halberd wrapped with copper wire coils set with glowing Warpstone, energised with barely suppressed power drawn from his Warp-generator."
+      }
+    ],
+    "faction": "wh2_main_skv_clan_skyre",
+    "factionFlag": "wh2_main_skv_clan_skyre",
+    "military_group": "wh2_main_skv",
+    "subculture_name": "Skaven",
+    "screen_name": "Clan Skryre",
+    "character_name": "Ikit Claw",
+    "quote": "The notorious tinker-rat known as Ikit Claw focuses his diabolical pursuits on building the most heinous killing-contraptions possible.",
+    "localised_mechanics": [
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_skv_underworld"
+        },
+        {
+          "type": "text",
+          "data": "Skaven Under-Empire: Establish warrens in any settlement, undermining your enemies progress, or hide in plain sight while growing your own empire."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_skv_food"
+        },
+        {
+          "type": "text",
+          "data": "Food: Maintain food supplies to gain growth and other bonuses, and to avoid starvation penalties."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "default",
+          "data": "icon_corruption_skv"
+        },
+        {
+          "type": "text",
+          "data": "Skaven corruption is a detriment to local public order, but allows you to spawn additional units of Clanrats to fight in local battles."
+        }
+      ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "dlc12_ikits_workshop",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Gain access to the Clan Skryre Forbidden Workshop"
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "dlc12_ikits_workshop",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "technology",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Research rate: +20%"
+            }
+          ],
+          "scope": [],
+          "priority": 61,
+          "icon_negative": "technology",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "loyalty",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Loyalty: +2 for new recruits"
+            }
+          ],
+          "scope": [],
+          "priority": 99,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -40,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -40% for Engineering buildings"
+            }
+          ],
+          "scope": [],
+          "priority": 801,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "dlc12_doomrocket",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Starts the campaign with a Warpstorm Doomrocket"
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "dlc12_doomrocket",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Warplock Jezzails, Ratling Gun and Warpfire Thrower Weapons Team units"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "experience",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: +2 for all Skaven Weapons Team units"
+            }
+          ],
+          "scope": [],
+          "priority": 120,
+          "icon_negative": "experience",
+          "is_positive_value_good": true
+        }
+      ]
+    }
+  },
+  "wh2_dlc12_political_party_vor_lzd_tehenhauin": {
+    "key": "wh2_dlc12_political_party_vor_lzd_tehenhauin",
+    "difficulty": "very_hard",
+    "character_image": "wh2_dlc12_lzd_tehenhauin",
+    "localised_description": [
+      {
+        "type": "quote",
+        "text": "\"The time of the Great Serpent is nigh!\""
+      },
+      {
+        "type": "paragraph",
+        "text": "One of the most significant events in the history of the Lizardmen was the rise of the Skink cult of the Serpent-God, Sotek. Traditionally, the gods of the Lizardmen were, and still are, the Old Ones, said to have come to the world in its primeval era from beyond the stars: such shadowy entities as Tlaxcotl, Chotec, Quatl, Tzunki, Xapati, Huanchi and the inscrutable Tepok, whose decree was for the world to have a central place in their unknowable plans. Sotek was a new god, an upstart god, the 'God of the Skinks', whose fateful prophecy was an obscure cautionary detail known only from a single plaque once kept in the great pyramid-temple of Chaqua, the City of Gold."
+      },
+      {
+        "type": "paragraph",
+        "text": "The former Mage-Priests of Chaqua had believed the Plaque of Sotek contained the true words of the Old Ones, but tragically did not ponder on them, assuming they spoke of events in the very distant future. Little did they know that Sotek’s prophecy not only predicted the collapse of the Warp gates, but also an imminent cataclysmic invasion of Lustria by the Skaven, starting with a deadly plague sweeping over the land. And so, when a virulent sickness arrived in Chaqua and decimated the population, it was already far too late. Soon, the unprepared Mage-Priests of the temple-city were also overcome by the sickness and perished. With the spawning pools infected and countless Skinks sick or dead, the events prophesized by the Plaque of Sotek had begun. Doom had befallen the City of Gold…"
+      },
+      {
+        "type": "paragraph",
+        "text": "The remaining population of Chaqua were now leaderless, but the few survivors were of the particularly resilient generation of Skinks known as the ‘Red Crests’. The greatest amongst them was an individual with a zeal for slaughtering Skaven very rarely seen in the dispassionate Lizardmen’s ranks – Tehenhauin, the Prophet of Sotek. As his following grew, the Cult of Sotek quickly became the focal point of the Lizardmen’s counter-offensive against the ratmen’s virulent invasion. For Sotek himself is prophesised to be a mighty serpent of such awesome size and appetite that he can swallow the Rat God himself and spend thousands of years digesting him!"
+      },
+      {
+        "type": "paragraph",
+        "text": "Having led the remaining cohorts of Chaqua on a migration ahead of the plague, Tehenhauin triumphantly grasps the Plaque of Sotek as he leads his apostles against Skaven armies wherever he finds them. It seems impossible for a short-lived Skink to attain his lifespan, but it is whispered that as a snake sheds its skin and is renewed, so too does Sotek’s Chosen. The prophecy states that the Serpent-God’s coming shall be heralded by the appearance of his forked tongue in the sky, but also that his invocation can only be made possible by sating his near-boundless appetite for sacrificial offerings. Tehenhauin will not rest until the waters of the River Amaxon run red with sacrificed Skaven blood, empowering Sotek to deliver Lustria from the rodent-spawn once and for all!"
+      }
+    ],
+    "faction": "wh2_dlc12_lzd_cult_of_sotek",
+    "factionFlag": "wh2_dlc12_lzd_cult_of_sotek",
+    "military_group": "wh2_main_lzd",
+    "subculture_name": "Lizardmen",
+    "screen_name": "Cult of Sotek",
+    "character_name": "Tehenhauin",
+    "quote": "The Prophet seeks to deliver Lustria from its beleaguerment by way of the only tribute acceptable to Sotek – prodigious sacrifice!",
+    "localised_mechanics": [
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_geomantic_web"
+        },
+        {
+          "type": "text",
+          "data": "Geomantic Web: settlements are linked by a network which boosts the power of commandments."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_spawning"
+        },
+        {
+          "type": "text",
+          "data": "Special Spawnings: Periodic missions allow access to powerful Blessed variants of certain units."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_beasts"
+        },
+        {
+          "type": "text",
+          "data": "Beasts suitable for every task, though some are so ferocious they may lose control and charge ahead."
+        }
+      ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "military_spending",
+          "value": 200,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: +200% for Saurus Infantry and Temple Guard units until completing Stage 1 of the Prophecy of Sotek"
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "dlc12_sotek_sacrifice_captives",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Sacrificial offerings gained from winning battles can be offered to Sotek to receive a variety of powerful rewards."
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "dlc12_sotek_sacrifice_captives",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": -75,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite cost: -75% for Rite of Sotek"
+            }
+          ],
+          "scope": [],
+          "priority": 106,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "resistance_physical",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Physical resistance: +10% for Skinks units"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 55,
+          "icon_negative": "resistance_physical",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "morale",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Leadership: +10 when fighting against Skaven"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 61,
+          "icon_negative": "morale",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "religion",
+          "value": 3,
+          "description": [
+            {
+              "type": "text",
+              "data": "Untainted: +3"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "(local province)"
+            }
+          ],
+          "priority": 104,
+          "icon_negative": "religion",
+          "is_positive_value_good": true
+        }
+      ]
+    }
+  },
+  "wh2_dlc12_political_party_vor_lzd_tiktaqto": {
+    "key": "wh2_dlc12_political_party_vor_lzd_tiktaqto",
+    "difficulty": "normal",
+    "character_image": "wh2_dlc12_lzd_tiktaqto",
+    "localised_description": [
+      {
+        "type": "quote",
+        "text": "\"Flying braves, bring wrath from the sky!!\""
+      },
+      {
+        "type": "paragraph",
+        "text": "Dwelling in the warmer, jungle climes in the southern regions of the world are the ancient societies of the Lizardmen. Often mistook as a single race, these reptilian guardians of Order are composed of several distinct species serving under the enigmatic Slann Mage-Priests. Of all Lizardmen species, the Skinks are the most mentally and physically agile, and on occasion a Skink spawning will not produce an entire cohort from the pools of life as is the norm, but instead only a single Skink will issue forth. These individuals are considered marked by the Old Ones as destined to lead, or otherwise achieve greatness amongst their kind. When such individuals emerge, the Slann Mage-Priests of Lustria make use of them in the Lizardmen chain of command to help achieve their indecipherable ends."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tiktaq’to is one such special individual – a cagey but death-defying Skink Chief who has proven himself peerless when it comes to aerial combat and leading bold hit-and-run attacks from the sky. From his outpost in Tlaqua he patrols the Southlands, leading a squadron of flying reptiles, from atop his Terradon, Zwup, through reckless paths of dense vegetation and steep-sided ravines so narrow that the flying beasts brush against the cliff-faces with each flap of their mighty wings. A keen sense of when and where to strike has led Tiktaq’to to countless victories against forces many times the size of his own. His foes always attempt to shoot him and his squadron out of the air as soon as they come within range – a feat easier said than done, since he leads his formations in such breath-taking aerial manoeuvres that they can evade clouds of arrows and emerge unscathed to deliver their own lethal attacks. For his many acts of fearless flying and savage attacks on the Lizardmen’s foes, Tiktaq’to has been named ‘Master of Skies’, a pre-eminent position that has also granted him ownership of the Mask of Heavens – a thrice-blessed heirloom from an elder age, which allows the wearer to meld their consciousness with the minds of the mighty Terradons."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tiktaq’to has been sent from Lustria in aid of the Great Plan, leading his squadron across the World Pond to the Southlands – a place of considerable significance to the Lizardmen as it was once a single landmass that included their home continent of Lustria, before Slann manipulation many ages ago divided it in two. As those who have braved both places will attest, this is why the jungles of the Southlands bear so much in common with those of Lustria, both being home to the same reptilian carnivores as well as long-forgotten temple-cities that have fallen off the newly-altered Geomantic Web. With new aeries now established in the ancient ruins of the previously abandoned temple-city of Tlaqua, the Lizardmen’s ancient holdings in the Southlands shall be forsaken no longer. It is the Master of the Skies’ duty to reclaim them, uphold the will of the Old Ones, and destroy all those discordant with the Great Plan!"
+      }
+    ],
+    "faction": "wh2_main_lzd_tlaqua",
+    "factionFlag": "wh2_main_lzd_tlaqua",
+    "military_group": "wh2_main_lzd",
+    "subculture_name": "Lizardmen",
+    "screen_name": "Tlaqua",
+    "character_name": "Tiktaq'to",
+    "quote": "The foremost airborne defender of the temple-cities is peerless in his vigilance and daring, timing aerial assaults to deadly perfection.",
+    "localised_mechanics": [
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_geomantic_web"
+        },
+        {
+          "type": "text",
+          "data": "Geomantic Web: settlements are linked by a network which boosts the power of commandments."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_spawning"
+        },
+        {
+          "type": "text",
+          "data": "Special Spawnings: Periodic missions allow access to powerful Blessed variants of certain units."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_lzd_beasts"
+        },
+        {
+          "type": "text",
+          "data": "Beasts suitable for every task, though some are so ferocious they may lose control and charge ahead."
+        }
+      ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "agent",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Skink "
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_agent_small"
+            },
+            {
+              "type": "text",
+              "data": "Heroes start with a Terradon mount"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "agent",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "effect_rite",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Rite of Tzunki: Resets the campaign movement range of all armies and characters when performed"
+            }
+          ],
+          "scope": [],
+          "priority": 50,
+          "icon_negative": "effect_rite",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "agent",
+          "value": 25,
+          "description": [
+            {
+              "type": "text",
+              "data": "Campaign line of sight: +25%"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "(all characters)"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "agent",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "general_ability",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Terradons gain a unique battle ability"
+            }
+          ],
+          "scope": [],
+          "priority": 600,
+          "icon_negative": "general_ability",
+          "is_positive_value_good": true
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Terradon Riders and Ripperdactyl Riders units"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 101,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "melee",
+          "value": 10,
+          "description": [
+            {
+              "type": "text",
+              "data": "Melee attack: +10 when in foreign territory"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 411,
+          "icon_negative": "melee",
+          "is_positive_value_good": true
+        }
+      ]
+    }
+  },
+  "wh2_dlc12_political_party_vor_skv_ikit_claw": {
+    "key": "wh2_dlc12_political_party_vor_skv_ikit_claw",
+    "difficulty": "hard",
+    "character_image": "wh2_dlc12_skv_ikit_claw",
+    "localised_description": [
+      {
+        "type": "quote",
+        "text": "\"To create, one must-must destroy! To destroy, one must-must create!\""
+      },
+      {
+        "type": "paragraph",
+        "text": "The black parody of mankind that are the Skaven ultimately embody everything that is wrong with humanity, only more so. Emerging from their subterranean lairs to unleash vicious and inhuman war, they are a nightmare vision – a ravenous horde, a chaotic and rolling tide of verminous ratmen in unimaginably vast numbers."
+      },
+      {
+        "type": "paragraph",
+        "text": "Of all the despicable Skaven clans that torment the world from the sprawling Under-Empire lurking beneath, Clan Skryre are arguably the most influential, and certainly the most feared. This is due to the deranged creations of the clan’s Warlock Engineers, who specialise in an insane blending of magic and arcane technology to produce untold weaponry in their Warpforges beneath their capital, Skavenblight. They are both inventors and sorcerers in their own right, manufacturing and wielding infernal devices capable of fiendish destruction, while also manipulating the Winds of Magic to cast spells and intertwine enchantments into mechanical form. By selling their weird arsenal of devastation to the other clans as quickly as slaves can churn them off the assembly lines, Clan Skryre has grown wealthy and powerful. None dare offend them for fear of ending up at the wrong end of any number of weapons that could melt, blast, desiccate, or otherwise cause a grievous death."
+      },
+      {
+        "type": "paragraph",
+        "text": "With depravity and intelligence in equal abundance, Ikit Claw has taken Skryre’s blend of science and sorcery to entirely new levels. The most infamous and dreaded of all Warlock Engineers, his experiments have resulted in entire legions of Skavenslaves being blasted to bits – a small price for the sheer power and killing might that he has added to Skryre’s deadly arsenal. In his bloodthirsty quest for destructive knowledge, Ikit has travelled the world, stealing secrets from the mystics of Cathay, studying the dimension-spanning machines of Lustria, and toiling for years alongside the cruel Forgemasters of far off Zharr-Naggrund."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ikit was tall and white-furred before a failed experiment exploded and mangled his body, so an intricate iron mask of his own invention now covers his hairless skull and a cunningly wrought exoskeleton aids his withered left side. The iron contraption is run by a Warp-generator, a masterpiece of engineering that siphons the Winds of Magic to also power Ikit’s devilish inventions. Whirring cogs hiss and vent steam as the Chief Warlock moves, clanking like a fully armoured knight. Like all Clan Skryre Warlock Engineers, Ikit has continued to tinker, adding countless upgrades. He wields the crackling blade known as ‘Storm Daemon’, a modified halberd wrapped with copper wire coils set with glowing Warpstone, energised with barely suppressed power drawn from his Warp-generator."
+      }
+    ],
+    "faction": "wh2_main_skv_clan_skyre",
+    "factionFlag": "wh2_main_skv_clan_skyre",
+    "military_group": "wh2_main_skv",
+    "subculture_name": "Skaven",
+    "screen_name": "Clan Skryre",
+    "character_name": "Ikit Claw",
+    "quote": "The notorious tinker-rat known as Ikit Claw focuses his diabolical pursuits on building the most heinous killing-contraptions possible.",
+    "localised_mechanics": [
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_skv_underworld"
+        },
+        {
+          "type": "text",
+          "data": "Skaven Under-Empire: Establish warrens in any settlement, undermining your enemies progress, or hide in plain sight while growing your own empire."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "faction_bullets",
+          "data": "bullet_skv_food"
+        },
+        {
+          "type": "text",
+          "data": "Food: Maintain food supplies to gain growth and other bonuses, and to avoid starvation penalties."
+        }
+      ],
+      [
+        {
+          "type": "icon",
+          "category": "default",
+          "data": "icon_corruption_skv"
+        },
+        {
+          "type": "text",
+          "data": "Skaven corruption is a detriment to local public order, but allows you to spawn additional units of Clanrats to fight in local battles."
+        }
+      ]
+    ],
+    "faction_effects": {
+      "faction_traits": [
+        {
+          "icon": "dlc12_ikits_workshop",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Gain access to the Clan Skryre Forbidden Workshop"
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "dlc12_ikits_workshop",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "technology",
+          "value": 20,
+          "description": [
+            {
+              "type": "text",
+              "data": "Research rate: +20%"
+            }
+          ],
+          "scope": [],
+          "priority": 61,
+          "icon_negative": "technology",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "loyalty",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Loyalty: +2 for new recruits"
+            }
+          ],
+          "scope": [],
+          "priority": 99,
+          "icon_negative": "loyalty",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "treasury",
+          "value": -40,
+          "description": [
+            {
+              "type": "text",
+              "data": "Construction cost: -40% for Engineering buildings"
+            }
+          ],
+          "scope": [],
+          "priority": 801,
+          "icon_negative": "treasury",
+          "is_positive_value_good": false
+        }
+      ],
+      "lord_traits": [
+        {
+          "icon": "dlc12_doomrocket",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Starts the campaign with a Warpstorm Doomrocket"
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "dlc12_doomrocket",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": -50,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep: -50% for Warplock Jezzails, Ratling Gun and Warpfire Thrower Weapons Team units"
+            }
+          ],
+          "scope": [
+            {
+              "type": "text",
+              "data": "("
+            },
+            {
+              "type": "icon",
+              "category": "default",
+              "data": "icon_army"
+            },
+            {
+              "type": "text",
+              "data": "Lord's army)"
+            }
+          ],
+          "priority": 105,
+          "icon_negative": "military_spending",
+          "is_positive_value_good": false
+        },
+        {
+          "icon": "experience",
+          "value": 2,
+          "description": [
+            {
+              "type": "text",
+              "data": "Recruit rank: +2 for all Skaven Weapons Team units"
+            }
+          ],
+          "scope": [],
+          "priority": 120,
+          "icon_negative": "experience",
           "is_positive_value_good": true
         }
       ]
@@ -5883,7 +7165,7 @@
         },
         {
           "type": "text",
-          "data": "Skaven Underworld: Settlements appear to be ruins and must be scouted to reveal any Skaven presence."
+          "data": "Skaven Under-Empire: Establish warrens in any settlement, undermining your enemies progress, or hide in plain sight while growing your own empire."
         }
       ],
       [
@@ -6033,7 +7315,7 @@
         },
         {
           "type": "text",
-          "data": "Skaven Underworld: Settlements appear to be ruins and must be scouted to reveal any Skaven presence."
+          "data": "Skaven Under-Empire: Establish warrens in any settlement, undermining your enemies progress, or hide in plain sight while growing your own empire."
         }
       ],
       [
@@ -7317,7 +8599,7 @@
         },
         {
           "type": "text",
-          "data": "Skaven Underworld: Settlements appear to be ruins and must be scouted to reveal any Skaven presence."
+          "data": "Skaven Under-Empire: Establish warrens in any settlement, undermining your enemies progress, or hide in plain sight while growing your own empire."
         }
       ],
       [
@@ -7467,7 +8749,7 @@
         },
         {
           "type": "text",
-          "data": "Skaven Underworld: Settlements appear to be ruins and must be scouted to reveal any Skaven presence."
+          "data": "Skaven Under-Empire: Establish warrens in any settlement, undermining your enemies progress, or hide in plain sight while growing your own empire."
         }
       ],
       [
@@ -9525,20 +10807,6 @@
     "faction_effects": {
       "faction_traits": [
         {
-          "icon": "amber_bundle",
-          "value": 1,
-          "description": [
-            {
-              "type": "text",
-              "data": "Alberic starts with the Knight's Vow unlocked"
-            }
-          ],
-          "scope": [],
-          "priority": 1,
-          "icon_negative": "amber_bundle",
-          "is_positive_value_good": true
-        },
-        {
           "icon": "income",
           "value": 25,
           "description": [
@@ -9594,6 +10862,20 @@
           "scope": [],
           "priority": 1,
           "icon_negative": "chivalry_negative",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "amber_bundle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Alberic starts with the Knight's Vow unlocked"
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "amber_bundle",
           "is_positive_value_good": true
         },
         {
@@ -9700,20 +10982,6 @@
           "is_positive_value_good": true
         },
         {
-          "icon": "military_spending",
-          "value": 200,
-          "description": [
-            {
-              "type": "text",
-              "data": "Upkeep greatly reduced for Grail Guardian units"
-            }
-          ],
-          "scope": [],
-          "priority": 1,
-          "icon_negative": "military_spending",
-          "is_positive_value_good": true
-        },
-        {
           "icon": "replenishment",
           "value": 15,
           "description": [
@@ -9741,6 +11009,20 @@
           "scope": [],
           "priority": 1,
           "icon_negative": "chivalry_negative",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "military_spending",
+          "value": 200,
+          "description": [
+            {
+              "type": "text",
+              "data": "Upkeep greatly reduced for Grail Guardian units"
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "military_spending",
           "is_positive_value_good": true
         },
         {
@@ -9833,20 +11115,6 @@
     "faction_effects": {
       "faction_traits": [
         {
-          "icon": "amber_bundle",
-          "value": 1,
-          "description": [
-            {
-              "type": "text",
-              "data": "Louen starts with all Knightly Vows unlocked"
-            }
-          ],
-          "scope": [],
-          "priority": 1,
-          "icon_negative": "amber_bundle",
-          "is_positive_value_good": true
-        },
-        {
           "icon": "campaign_movement",
           "value": 10,
           "description": [
@@ -9902,6 +11170,20 @@
           "scope": [],
           "priority": 1,
           "icon_negative": "chivalry_negative",
+          "is_positive_value_good": true
+        },
+        {
+          "icon": "amber_bundle",
+          "value": 1,
+          "description": [
+            {
+              "type": "text",
+              "data": "Louen starts with all Knightly Vows unlocked"
+            }
+          ],
+          "scope": [],
+          "priority": 1,
+          "icon_negative": "amber_bundle",
           "is_positive_value_good": true
         },
         {
@@ -12443,7 +13725,7 @@
           "description": [
             {
               "type": "text",
-              "data": "Weapon damage: +25% for embedded Vampire "
+              "data": "Weapon strength: +25% for embedded Vampire "
             },
             {
               "type": "icon",
