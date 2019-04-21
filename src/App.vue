@@ -91,6 +91,8 @@ import GlobalTooltip from "@/components/GlobalTooltip";
 
 import AttributeFaction from "@/components/AttributeFaction";
 
+import { shuffle } from "@/util/shuffle";
+
 function compare(a, b) {
   if (a.military_group < b.military_group) return -1;
   if (a.military_group > b.military_group) return 1;
@@ -141,13 +143,15 @@ export default {
     },
     async random() {
       this.isRandomButtonDisabled = true;
-      const randomPath = this.lords
-        .map(() => (Math.random() * this.lords.length) | 0);
 
-      for (let i = 0; i < this.lords.length; i++) {
+      const randomPath = shuffle(this.lords.slice());
+
+      console.log(randomPath.length)
+
+      for (let i = 0; i < randomPath.length; i++) {
         await new Promise((resolve) => {
           setTimeout(() => {
-            this.selectedLord = this.lords[randomPath[i]];
+            this.selectedLord = randomPath[i];
             resolve();
           }, i * 3);
         });
